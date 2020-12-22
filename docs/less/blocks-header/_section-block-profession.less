@@ -1,0 +1,167 @@
+
+.sectio-block-profession {
+
+    @media(min-width: 768px) {
+    padding-top: 9px;
+    
+    }
+    @media(min-width: 1200px) {
+        padding-top: 2px;
+    }
+} 
+.block-profession {
+    display: flex;
+    flex-direction: column;
+
+    @media(min-width: 768px) {
+        flex-direction: row;
+    }
+    @media(min-width:1200px) {
+
+    }
+    
+}
+.block-profession_skills {
+  
+    
+    @media(min-width: 768px) {
+        width: 88%;
+        max-width: 372px;
+
+    }
+    @media(min-width: 1200px) {
+    max-width: 780px;
+    }
+}
+.block-skills_cell-title {
+    margin-bottom: 19px;
+
+    @media(min-width: 768px) {
+    
+    
+    }
+    @media(min-width:1200px) {
+        margin-bottom: 27px;
+    }
+    
+}
+.block-contacts_cell-title {
+    margin-bottom: 17px;
+
+    @media(min-width: 768px) {
+        margin-bottom: 22px;
+    
+    }
+    @media(min-width:1200px) {
+        margin-bottom: 32px;
+    }
+    
+}
+
+
+
+.block-profession_list {
+    width: 234px;
+    margin-bottom: 30px;
+
+    li {
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 1.3;
+    color: var(--text);
+    }
+
+    @media(min-width: 768px) {
+        width: 319px;
+    
+    }
+    @media(min-width:1200px) {
+        width: auto;
+        margin-bottom: 43px;
+
+        li {
+            padding-left: 31px;
+            margin-bottom: 8px;
+            font-size: 24px;
+            position: relative;
+            &::after {
+                content: "";
+                width: 23px;
+                height: 2px;
+                transform: translate(0%, 16px);
+                background-color: var(--text);
+                position: absolute;
+                top: 0;
+                left: 0;
+
+            }
+        }
+    }
+    
+}
+.block-profession_btn {
+    display: none;
+    @media(min-width: 768px) {
+    
+    
+    }
+    @media(min-width:1200px) {
+       display: inline-block;
+    }
+    
+}
+.block-profession_contacts {
+    
+    .mail-adress {
+    margin-top: 14px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text);
+    position: relative;
+
+        &:hover {
+            color: var(--blue);
+        }
+        &:active {
+            color: var(--red);
+        }
+    }
+
+    @media(min-width: 768px) {
+        .mail-adress {
+            margin-top: 9px;
+            font-size: 24px;
+        }
+        width: 339px;
+        
+    }
+
+    @media(min-width: 1200px) {
+        
+        .mail-adress {
+            margin-top: 21px;
+            font-size: 24px;
+        }
+    }
+    
+}
+.mail-adress {
+  &::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        bottom: 4px;
+        left: 0;
+        position: absolute;
+        background-color: var(--text);
+    } 
+    &:hover::after {
+        background-color: var(--blue);
+    }
+    &:active::after {
+        background-color: var(--red);
+    }
+    
+}
+
+

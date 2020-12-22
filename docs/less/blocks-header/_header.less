@@ -1,8 +1,8 @@
 .header {
-   padding: 37px 0 94px;
+   padding: 61px 0 94px;
 
     @media(min-width: 768px) {
-        padding-bottom: 55px;
+        padding-top: 26px;
     }
     @media(min-width:1200px) {
         height: auto;
@@ -11,63 +11,88 @@
         background-size: auto;
         background-position: center;
         background-repeat: repeat;
-        overflow-x: hidden;
+        
     }
 }
 
 
 .header-nav {
     margin: 0 auto;
-   height: 109px;
     width: 320px;
 
     @media(min-width: 768px) {
         width: 768px;
     }
     @media(min-width:1200px) {
-        max-width: 1600px;
-        height: 185px;
+        width: auto;
         margin: 0 auto;
-        text-align: center;
-   
-       
     }
 }
-.logo {
-    position: absolute;
-    top: 0;
-    left: 150px;
-    transform: translate(-217%, 55%);
+.header-nav_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        margin: 0 auto;
+        padding: 0 32px;
+        max-width: 320px;
 
     @media(min-width: 768px) {
+        padding: 0 15px;
+        max-width: 700px;
     
+    }
+    @media(min-width: 1200px) {
+     
+       min-width: 1400px;
+       max-width: auto;
+
+    }
+}
+div.logo a.bottom-line  {
+    &::after { 
+        content: "";
+        height: 10px;
+        width: 105%;
+        background-color: var(--yelou);
+        position: absolute;
+        left: -5px;
+        bottom: 5px;
+        z-index: -1;
+    }
+
+  
+    
+
+    @media(min-width: 768px) {
+       
     
     }
     @media(min-width:1200px) {
-        left: -150px;
-        transform: translate(-250%, -18%);
+     
     }
-    
-
-    
+      
 }
-.logo h2{
-    font-size: 42px;
-    font-weight: 900;
-    color: rgb(0, 0, 0);
-    line-height: 1.2;
-    
+.logo  {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    a {
+        font-size: 42px;
+        font-weight: 900;
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+    } 
 }
 
 .main-header {
     font-size: 42px;
     font-weight: 800;
-    line-height: 1;
+    line-height: 1.1;
 
     @media(min-width: 768px) {
         font-weight: 800;
         font-size: 52px;
-        line-height: 1.1;
+        line-height: 1.2;
     }
     @media(min-width:1200px) {
         font-size: 90px;
@@ -75,14 +100,7 @@
     }
     
 }
-div.logo.bottom-line {
-    &::after {
-        content: "";
-        height: 10px;
-        width: 105%;
-        bottom: 5px;
-    }
-}
+
 
 
 .header-inner-nav {
@@ -93,7 +111,6 @@ div.logo.bottom-line {
     
     }
     @media(min-width:1200px) {
-        padding-right:  50px;   
         display: block;
         a {
             font-size: 20px;
@@ -123,12 +140,6 @@ div.logo.bottom-line {
 }
 .header-nav-icn {
 
-    position: absolute;
-    top: 0;
-    right: 100px;
-    transform: translate(14%, 23%);
-    transition: .5s;
-
     .hover-in:hover{
         fill: #0077b5;
     }
@@ -144,9 +155,7 @@ div.logo.bottom-line {
     
     }
     @media(min-width:1200px) {
-        top: 0px;
-        right: -100px;
-        transform: translate(166%, 2%);
+      
     }
     
 }
@@ -158,10 +167,6 @@ div.logo.bottom-line {
     height: 25px;
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(150%, 140%);
 }
     
     .toggle-menu span {
@@ -192,15 +197,18 @@ div.logo.bottom-line {
        
          span {
     background-color: transparent;
-         &:before {
-    transform: rotate(45deg);
-    top: 0;
+                &:before {
+        transform: rotate(45deg);
+        top: 0;
+        }
+                &:after{
+        transform: rotate(-45deg);
+        top: 0;
+        }
     }
-          &:after{
-    transform: rotate(-45deg);
-    top: 0;
+    
     }
-    }
+.toggle-menu {
     @media(min-width: 768px) {
     
     
@@ -208,8 +216,7 @@ div.logo.bottom-line {
     @media(min-width:1200px) {
        display: none;
     }
-    }
-
+}
 
 
 
@@ -232,6 +239,22 @@ div.logo.bottom-line {
     
   
 }
+#head-nav_vk-size {
+    display: none;
+
+    @media(min-width: 768px) {
+    
+    
+    }
+    @media(min-width:1200px) {
+        width: 32px;
+        height: auto;
+        display: inline-block;
+    }
+    
+  
+}
+
 .head-nav_icn-color {
     fill: #000;
    

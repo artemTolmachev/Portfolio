@@ -105,10 +105,6 @@
     }
        
 }
-.section-row {
-    display: flex;
-    justify-content: space-between;
-}
 .section-information_button {
     display: none;
     @media(min-width: 768px) {
@@ -173,4 +169,75 @@ font-weight: 800;
     font-size: 40px;
 }
 
+}
+.social-nav {
+    display: flex;
+    position: relative;
+    a {
+        &::after {
+            content: "";
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            transform: translate(-14%, -14%);
+            transition: box-shadow 0.5s;
+        }
+        &:hover::after {
+            border: 5px solid var(--yelou);
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.544);
+        }
+    }
+  
+   
+}
+.social-nav > * + * {
+    margin-left: 30px;
+}
+
+#github-icn_size {
+    width: 50px;
+    height: 50px;
+   
+}
+.git {
+     fill: #212121;
+ 
+}
+.social-link svg {
+    vertical-align: middle; 
+}
+
+.social-link {
+    position: relative;
+    display: flex;
+    display: block;
+ 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 3;
+    line-height: 48px;
+    text-align: center;
+
+}
+.telegram-icn {
+    background-color: #039be5;
+}
+.vk-icn {
+    background-color: #4d76a1;
+}
+.facebook-icn {
+    background-color: #3b5998;
+}
+#size-icn {
+    width: auto; 
+    height: 26px;
+    position: relative;
+    z-index: 9;
+}
+a svg .color-icn {
+    fill: white;
 }
