@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-        <header class="header">
+        <!-- header -->
+        <header class="header none">
             <!-- header-nav -->
             <div class="header-nav">
                 <div class="header-nav_container">
@@ -125,7 +126,66 @@
 
             </section>
         </header>
-        <script src="js/main.js"></script>
+   <!--// header -->
+        <section class="section-portfolio ">
+            <div class="container">
+                <div class="section-portfolio_cell-header ">
+                    <h2 class="section_header bottom-line">Портфолио</h2>
+                </div>
+                <div class="section-portfolio_works">
+                    <div id="btn" class="portfolio-nav">
+                        <button class="portfolio-nav_projects active control-active" data-filter="all">Все работы</button>
+                        <button class="portfolio-nav_projects active"  data-filter=".boot"> Bootstrap</button>
+                        <button class="portfolio-nav_projects active" data-filter=".wr"> WordPress</button>
+                        <button class="portfolio-nav_projects active" data-filter=".front">Frontend</button>
+                    </div>
+                    <div class="portfolio-content" id="portfolio-projects">
+                     
+                        <a class="mix boot"  href="#!">
+                            <div class="portfolio-projects_card big-card">
+                                <img src="./img/portfolio-img/Landing-Page-Travel.svg" alt="foto-card">
+                                <h4>Верстка “Форест тревел”</h4>
+                                <p>Верстка многостраничного сайта.</p>  
+                            </div>     
+                        </a>
+                       
+                        <a class="mix wr front" href="#!">
+                            <div class="portfolio-projects_card big-card">
+                                <img src="./img/portfolio-img/iMac-With-Spheres-Free-Mockup.svg" alt="foto-card"> 
+                                <h4>Сайт для коворкинга “Мечта”</h4>
+                                <p>Верстка лендинга. </p>
+                            </div>         
+                        </a>
+                       
+                        <a class="mix wr front boot" href="#!">
+                            <div class="portfolio-projects_card smoll-card">
+                                <img src="./img/portfolio-img/img-madcap.svg" alt="foto-card">
+                                <h5>Верстка “Мир Авто”</h5>
+                                <p>Верстка многостраничного сайта. </p>  
+                            </div>   
+                        </a>
+                       
+                        <a class="mix wr front" href="#!" >
+                            <div class="portfolio-projects_card smoll-card">
+                                <img src="./img/portfolio-img/img-iphon.svg" alt="foto-card">
+                                <h5>Верстка “Мир Авто”</h5>
+                                <p>Верстка многостраничного сайта.</p>
+                            </div>   
+                        </a>
+                       
+                        <a class="mix front" href="#!">
+                            <div class="portfolio-projects_card smoll-card">
+                                <img src="./img/portfolio-img/img-orange.svg" alt="foto-card">
+                                <h5>Верстка “Мир Авто”</h5>
+                                <p>Верстка многостраничного сайта.</p>
+                            </div>    
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <script src="libs/jquery/jquery-3.0.0.min.js"></script>
         <script src="libs/mixitup3/mixitup.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

@@ -7,6 +7,9 @@
 * {
   box-sizing: border-box;
 }
+.none {
+  display: none;
+}
 html,
 body {
   margin: 0;
@@ -62,9 +65,19 @@ button {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media (min-width: 576px) {
+  .container {
+    max-width: 330px;
+  }
+}
 @media (min-width: 768px) {
   .container {
     max-width: 738px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
@@ -168,6 +181,9 @@ h3.title-h3 {
   border: 5px solid var(--yelou);
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.544);
 }
+.social-nav a:active::after {
+  border: 5px solid #e1bc10;
+}
 .social-nav > * + * {
   margin-left: 30px;
 }
@@ -210,8 +226,16 @@ h3.title-h3 {
 a svg .color-icn {
   fill: white;
 }
+.section_header {
+  width: 365px;
+  height: 62px;
+  color: var(--text);
+  font-size: 64px;
+  font-weight: 800;
+}
 .header {
   padding: 61px 0 94px;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .header {
@@ -251,10 +275,16 @@ a svg .color-icn {
   padding: 0 32px;
   max-width: 320px;
 }
+@media (min-width: 576px) {
+  .header-nav_container {
+    min-width: 340px;
+  }
+}
 @media (min-width: 768px) {
   .header-nav_container {
     padding: 0 15px;
     max-width: 700px;
+    min-width: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -450,8 +480,14 @@ div.logo a.bottom-line::after {
     display: none;
   }
 }
+@media (min-width: 425px) {
+  .section-information_left {
+    margin-bottom: 70px;
+  }
+}
 @media (min-width: 1200px) {
   .section-information_left {
+    margin-bottom: 0;
     width: 60%;
     padding-top: 0;
     min-width: auto;
@@ -541,6 +577,12 @@ span.bottom-line::after {
   margin-bottom: 54px;
   overflow: hidden;
 }
+@media (min-width: 576px) {
+  .section-information_img {
+    min-width: 330px;
+    height: 330px;
+  }
+}
 @media (min-width: 768px) {
   .section-information_img {
     margin-bottom: 0;
@@ -570,10 +612,31 @@ span.bottom-line::after {
   }
 }
 .header-image {
+  margin: 0 auto;
   margin-bottom: 73px;
 }
 .header-image img {
   transform: scale(1.8);
+}
+@media (min-width: 425px) {
+  .header-image {
+    max-width: 425px;
+    margin-bottom: 70px;
+  }
+  .header-image img {
+    margin-top: -59px;
+    transform: scale(1.5);
+  }
+}
+@media (min-width: 576px) {
+  .header-image {
+    max-width: 576px;
+    margin-bottom: 20px;
+  }
+  .header-image img {
+    margin-top: -59px;
+    transform: scale(1.2);
+  }
 }
 @media (min-width: 768px) {
   .header-image {
@@ -589,7 +652,6 @@ span.bottom-line::after {
 @media (min-width: 1200px) {
   .header-image {
     max-width: 1600px;
-    margin: 0 auto;
     margin-bottom: 37px;
   }
   .header-image img {
@@ -740,5 +802,77 @@ span.bottom-line::after {
 }
 .mail-adress:active::after {
   background-color: var(--red);
+}
+.section-portfolio {
+  padding-top: 121px;
+  padding-bottom: 120px;
+}
+.section-portfolio_works {
+  padding-top: 66px;
+}
+.portfolio-content {
+  padding-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-portfolio_cell-header {
+  position: relative;
+  display: inline-block;
+}
+.section-portfolio_cell-header .bottom-line::after {
+  content: "";
+  bottom: -15px;
+}
+.portfolio-nav_projects {
+  font-family: 'M PLUS 1p', sans-serif;
+  color: #8fa5ae;
+  font-size: 28px;
+  font-weight: 800;
+}
+.portfolio-nav_projects:hover {
+  color: var(--red);
+}
+.portfolio-nav_projects:active {
+  color: var(--text);
+}
+.active {
+  color: var(--text);
+}
+.portfolio-nav > * + * {
+  margin-left: 76px;
+}
+.big-card {
+  margin-bottom: 64px;
+}
+.big-card h4 {
+  color: var(--text);
+  font-size: 32px;
+  font-weight: 700;
+}
+.big-card p {
+  color: #9d9d9d;
+  font-size: 22px;
+  font-weight: 300;
+}
+.big-card img {
+  margin-bottom: 23px;
+}
+.smoll-card {
+  padding-bottom: 8px;
+}
+.smoll-card h5 {
+  color: var(--text);
+  font-size: 26px;
+  font-weight: 700;
+}
+.smoll-card p {
+  color: #9d9d9d;
+  font-size: 20px;
+  font-weight: 300;
+}
+.smoll-card img {
+  margin-top: -4px;
+  margin-bottom: 21px;
 }
 /*# sourceMappingURL=main.css.map */
