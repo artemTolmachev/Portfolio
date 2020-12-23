@@ -806,6 +806,7 @@ span.bottom-line::after {
 .section-portfolio {
   padding-top: 97px;
   padding-bottom: 120px;
+  background-color: #f4f8f9;
 }
 .section-portfolio_works {
   padding-top: 66px;
