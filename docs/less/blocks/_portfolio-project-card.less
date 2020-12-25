@@ -1,0 +1,217 @@
+.portfolio-big-card__link {
+    display: block;
+    max-width: 555px;
+    width: 49%;
+    margin-bottom: 64px;
+    transition: .5s;
+
+&:hover {
+    box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.508);
+
+    .big-card__img::after {
+        content: "";
+        transform: translate(0%, 0%);
+    }
+
+    .big-card__img {
+        button {
+            transform: translate(-50%, -50%);
+        } 
+    }
+
+    .big-card__title {
+        padding-left: 10px;
+        transition: .5s;
+        h4 {
+            color: var(--red);
+            &::after {
+                content: "";
+                width: 100%;
+            }
+        }
+        
+    }
+}
+}
+.big-card__title {
+    
+    h4 {
+    display: inline-block;
+    margin-bottom: 2px;
+    color: var(--text);
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 1px;
+        background-color: var(--red); 
+        transition: .5s;
+    }
+    }
+    p {
+    color: #9d9d9d;
+    font-size: 22px;
+    font-weight: 300;
+    }
+
+}
+.portfolio-smoll-card_link {
+    display: block;
+    width: 32%;
+    max-width: 360px;
+    transition: .5s;
+
+    &:hover {
+        box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.508);
+    
+        .smoll-card__img::after {
+            content: "";
+            transform: translate(0%, 0%);
+        }
+    
+        .smoll-card__img  {
+            button {
+                transform: translate(-50%, -50%);
+            } 
+        }
+    
+        .smoll-card__title {
+            padding-left: 10px;
+            transition: .5s;
+            h5 {
+                color: var(--red);
+                &::after {
+                    content: "";
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+}
+.smoll-card__title {
+    
+    h5 {
+    display: inline-block;
+    margin-bottom: 2px;
+    color: var(--text);
+    font-size: 26px;
+    font-weight: 700;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 1px;
+        background-color: var(--red); 
+        transition: .5s;
+    }
+
+    }
+    p {
+    color: #9d9d9d;
+    font-size: 20px;
+    font-weight: 300;
+    }
+   
+}
+.big-card__img {
+    position: relative;
+    margin-bottom: 22px;
+    overflow: hidden;
+  
+    button {
+        padding: 0 30px;
+        position: absolute;
+        height: 52px;
+        border-radius: 50px; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -300px);
+        color: #ea736d;
+        background-color: #fff;
+        font-family: 'M PLUS 1p',sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+        z-index: 2;
+        transition: .5s;
+
+        &:hover {
+            background-color: #ea736d;
+            color: #fff;
+        }
+        &:active {
+            background-color: #d4423b;
+        }
+    }
+}
+.big-card__img {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 0, 0.5);
+        transform: translate(-110%, 0%);
+        z-index: 1;
+        transition: .5s;
+    }
+}
+.smoll-card__img {
+    position: relative;
+    margin-top: -4px;
+    margin-bottom: 21px;
+    overflow: hidden;
+
+    button {
+        padding: 0 14px;
+        position: absolute;
+        height: 36px;
+        border-radius: 50px; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -300px);
+        color: #ea736d;
+        background-color: #fff;
+        font-family: 'M PLUS 1p',sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        z-index: 2;
+        transition: .5s;
+
+        &:hover {
+            background-color: #ea736d;
+            color: #fff;
+        }
+        &:active {
+            background-color: #d4423b;
+        }
+    }
+}
+.smoll-card__img {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 0, 0.5);
+        transform: translate(-110%, 0%);
+        z-index: 1;
+        transition: .5s;
+    }
+}
