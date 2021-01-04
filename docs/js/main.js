@@ -1,40 +1,112 @@
+$(document).ready(function(){
+    const toggleMenu = document.querySelector('.toggle-menu'); //иконкагамбургер
+    const mobMenu = document.querySelector('.mobile-menu'); //мобильное меню
+    const overlay = document.querySelector('.overlay'); //затемняющий фон при активном мобильном меню
+    const nonescroll = document.querySelector('body'); //блокировка скролла при ативном моб меню
 
-const toggleMenu = document.querySelector('.toggle-menu'); //иконкагамбургер
-const mobMenu = document.querySelector('.mobile-menu'); //мобильное меню
-const overlay = document.querySelector('.overlay'); //затемняющий фон при активном мобильном меню
-const nonescroll = document.querySelector('body'); //блокировка скролла при ативном моб меню
 
-toggleMenu.addEventListener('click', function(){
-    this.classList.toggle('active');
-    mobMenu.classList.toggle('active-menu');
-    overlay.classList.toggle('active');
-    nonescroll.classList.toggle('nonescroll');
-});
-mobMenu.addEventListener('click', function(){
-    this.classList.remove('active-menu');
-    toggleMenu.classList.remove('active');
-    overlay.classList.remove('active');
-    nonescroll.classList.remove('active');
-});
-overlay.addEventListener('click', function(){
-    this.classList.remove('active');
-    toggleMenu.classList.remove('active');
-    mobMenu.classList.remove('active-menu');
-    nonescroll.classList.remove('nonescroll');
-});
+    toggleMenu.addEventListener('click', function(){
+        this.classList.toggle('active');
+        mobMenu.classList.toggle('active-menu');
+        overlay.classList.toggle('active');
+        nonescroll.classList.toggle('nonescroll');
+    });
+    mobMenu.addEventListener('click', function(){
+        this.classList.remove('active-menu');
+        toggleMenu.classList.remove('active');
+        overlay.classList.remove('active');
+        nonescroll.classList.remove('active');
+    });
+    overlay.addEventListener('click', function(){
+        this.classList.remove('active');
+        toggleMenu.classList.remove('active');
+        mobMenu.classList.remove('active-menu');
+        nonescroll.classList.remove('nonescroll');
+    });
 
-// mixitUp
-let containerEl = document.querySelector('#portfolio-projects');
-let mixer = mixitup(containerEl, {
-    classNames: {
-        block: ""
+        
+   
+    // mixitUp
+    let containerEl = document.querySelector('#portfolio-projects');
+    let mixer = mixitup(containerEl, {
+        classNames: {
+            block: ""
+         }
+     
+    });
+    //  кнопки фильтрации активный цвет 
+    $(function() {
+        $("#btn .portfolio-nav_projects").click(function() {
+            $("#btn .portfolio-nav_projects").removeClass("actives");         
+            $(this).toggleClass("actives");
+        })
+    });
+    // для формы 
+    const formItems = document.querySelectorAll('.form-field');
+     
+    for(let item of formItems){
+        const thisParent = item.closest('.form-item');
+        const thisPlaceholder = thisParent.querySelector('.fake-placeholder');
+    // если инпут в фокусе
+    item.addEventListener('focus',function(){
+        thisPlaceholder.classList.add('active');
+    });
+    // если инпут не в фокусе
+    item.addEventListener('blur', function(){
+        if(item.value.length > 0) {
+            thisPlaceholder.classList.add('active');
+        }
+        else{
+            thisPlaceholder.classList.remove('active');
+        }
+    })
+    }
+//form validate
+$('.contact-form').validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+        subject: {
+            required: true
+        },
+        message: {
+            required: true
+        }
+    },
+    messages: {
+        email: {
+            required: 'Введите email',
+            email: 'отсутствует символ @'
+        },
+        subject: {
+            required: 'Введите тему сообщения'
+        },
+        message: {
+            required: 'Введите текст сообщения'
+        }
+    },
+    submitHandler: function (form) {
+        ajaxFormSubmit();
+    }
+})
+// функция AJAX запроса на сервер 
+function ajaxFormSubmit() {
+    let string = $(".contact-form").serialize(); //сохраняем данные введенные в форму в строку
+// формируем ajax запрос
+$.ajax({
+    type: "POST", //тип запросса - POST
+    url: "php/mail.php",//куда отправляем запрос
+    data: string, //какие данные щтправляем,в данном случае переменнная string
+    // функция если все прошло успешно
+    success: function (html) {
+        $(".contact-form").slideUp(800);
+        $('#answer').html(html);
     }
 });
+return false;
+}
+})
 
-//  кнопки фильтрации активный цвет 
-$(function() {
-    $("#btn .portfolio-nav_projects").click(function() {
-        $("#btn .portfolio-nav_projects").removeClass("active");         
-        $(this).toggleClass("active");
-    })
-});
+

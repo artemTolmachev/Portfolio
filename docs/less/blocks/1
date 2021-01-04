@@ -14,9 +14,3 @@
    
 }
 
- &::after {
-        content: "";
-        height: 10px;
-        width: 105%;
-        bottom: 5px;
-    }

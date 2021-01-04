@@ -30,10 +30,10 @@
     padding: 0;
     list-style-type: none;
     }
-    p, span {
+     span {
     margin: 0;
     }
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5, h6, p {
         color: var(--text);
         margin: 0;
     }
@@ -46,16 +46,24 @@
     svg {
     max-width: 100%;
     }
-    button, input {
+    button, input, textarea {
     outline: none;
     }
-    button {
-    display: inline-block;
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
+input {              
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     }
+textarea {
+    resize: none;
+    }        
+button {
+display: inline-block;
+cursor: pointer;
+border: 0;
+padding: 0;
+background-color: transparent;
+}
     
 .container {
     width: 100%;
@@ -68,7 +76,7 @@
         max-width: 330px;
     }
     @media(min-width: 768px) {
-        max-width: 738px;
+        max-width: 745px;
         
     }
     @media(min-width:992px) {
@@ -99,13 +107,15 @@
       
 }
 .bottom-line {
+    display: inline-block;
+    position: relative;
     &::after{
         content: "";
         height: 12px;
-        width: 105%;
+        width: 101%;
         background-color: var(--yelou);
         position: absolute;
-        left: -5px;
+        left: -3px;
         bottom: 10px;
         z-index: -1;
     }
@@ -256,8 +266,15 @@ font-weight: 800;
 a svg .color-icn {
     fill: white;
 }
-.section_header {
-    color: var(--text);
+.title-h2 {
     font-size: 64px;
     font-weight: 800;
+}
+.title-h4 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.title-h5 {
+    font-size: 26px;
+    font-weight: 700;
 }
