@@ -1542,6 +1542,8 @@ span.bottom-line::after {
   transition: .5s;
 }
 .timeline {
+  background-image: url(../img/img-timeline/bcg-timeline_01.jpg);
+  background-repeat: repeat;
   padding: 48px 0 60px;
 }
 .timeline h2 {
@@ -1549,6 +1551,7 @@ span.bottom-line::after {
 }
 .timeline .bottom-line {
   position: relative;
+  z-index: 1;
 }
 .timeline .bottom-line::after {
   content: "";
