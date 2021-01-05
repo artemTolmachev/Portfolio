@@ -208,7 +208,8 @@ h3.title-h3 {
   }
 }
 #github-icn_size,
-#github-size {
+#github-size,
+#git-size {
   width: 50px;
   height: 50px;
 }
