@@ -237,7 +237,7 @@ h3.title-h3 {
 .facebook-icn {
   background-color: #3b5998;
 }
-#size-icn {
+.svg-inline--fa {
   width: auto;
   height: 26px;
   position: relative;
@@ -2366,5 +2366,15 @@ label.error {
   .footer__text br:nth-child(3) {
     display: none;
   }
+}
+.project__header h3 {
+  font-size: 48px;
+  font-weight: 800;
+}
+.project__header {
+  margin: 0 auto;
+}
+.icn {
+  width: 25px;
 }
 /*# sourceMappingURL=main.css.map */
