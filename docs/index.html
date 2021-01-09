@@ -5,39 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="./fonts/mplus1p/mplus1p.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-<!-- header -->
+        <!-- header -->
         <header class="header">
             <!-- header-nav -->
             <!-- mobile-menu -->
             <div class="overlay"></div>
             <div class="mobile-menu">
                 <div class="mobile-menu_container">
-                    <div class="logo">
-                        <a href="#" class="bottom-line">АТ</a>
-                    </div>
+                    <a href="#" class="logo">
+                        <h2 class="bottom-line">АТ</h2>
+                    </a>
                     <div class="mobile-menu_nav">
-                        <div><a href="#">Услуги</a></div>
-                        <div><a href="#">Работы</a></div>
-                        <div><a href="#">Контакты</a></div>
+                        <div><a href="#scroll">Услуги</a></div>
+                        <div><a href="#works">Работы</a></div>
+                        <div><a href="#conection">Контакты</a></div>
                     </div>
                     <nav class="social-nav">
-                        <a href="#" class="github-icn">
+                        <a href="https://github.com/artemTolmachev"  target="blank"  class="github-icn">
                             <svg id="git-size" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-lg" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path class="git" fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
                         </a>
-                        <a href="#" class="social-link telegram-icn">
+                        <a href=" tg://msg?text=<?php echo urlencode( '<TEXT>' ); ?>&to=<PHONE>+380972890266</PHONE>" target="blank" class="social-link telegram-icn">
                             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram-plane" class="svg-inline--fa fa-telegram-plane fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path class="color-icn" fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg>
                         </a>
-                        <a href="#" class="social-link vk-icn">
+                        <a href="https://vk.com/id618849344"  target="blank" class="social-link vk-icn">
                             <svg  aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vk" class="svg-inline--fa fa-vk fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="color-icn" fill="currentColor" d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg>  
                         </a>
-                        <a href="#" class="social-link facebook-icn">
+                        <a href="https://www.facebook.com/profile.php?id=100031460761671"  target="blank" class="social-link facebook-icn">
                             <svg  aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path class="color-icn" fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
                         </a>
                     </nav>
-                    <a href="mailto:lidama65@mail.ua" class="mail-adress">lidama65@mail.ua</a>
+                    <a href="mailto:artem.tolmachev@internet.ru" target="blank" class="mail-adress">artem.tolmachev@internet.ru</a>
                 </div>
             </div>
             <!-- //mobile-menu -->
@@ -50,22 +52,22 @@
                         <a href="#" class="bottom-line-hover">
                             Главная
                         </a>
-                        <a href="#" class="bottom-line-hover">
+                        <a href="#works" class="bottom-line-hover">
                             Работы
                         </a>
-                        <a href="#" class="bottom-line-hover">
+                        <a href="#conection" class="bottom-line-hover">
                             Контакты
                         </a>
                     </nav>
                     <nav class="header-nav-icn">
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/%D0%B0%D1%80%D1%82%D0%B5%D0%BC-%D1%82%D0%BE%D0%BB%D0%BC%D0%B0%D1%87%D0%B5%D0%B2-8a5b03203/" target="blank">
                             <svg id="head-nav__in-size" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path  class="head-nav_icn-color
                             hover-in " fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
                         </a>
-                        <a href="#">
+                        <a href="https://github.com/artemTolmachev" target="blank">
                             <svg id="head-nav__git-size" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path  class="head-nav_icn-color hover-git" fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
                         </a>
-                        <a href="#">
+                        <a href="https://vk.com/id618849344" target="blank">
                             <svg  id="head-nav__vk-size" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vk" class="svg-inline--fa fa-vk fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="head-nav_icn-color hover-vk" fill="currentColor" d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg>
                         </a>
                     </nav>
@@ -133,29 +135,29 @@
                                 <h3 class="title-h3">На связи:</h3>
                             </div>
                             <nav class="social-nav">
-                                <a href="#" class="github-icn">
+                                <a href="https://github.com/artemTolmachev" target="blank"  class="github-icn">
                                     <svg id="github-icn_size" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-lg" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path class="git" fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
                                 </a>
-                                <a href="#" class="social-link telegram-icn">
+                                <a href="tg://msg?text=<?php echo urlencode( '<TEXT>' ); ?>&to=<PHONE>+380972890266</PHONE>" target="blank" class="social-link telegram-icn">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram-plane" class="svg-inline--fa fa-telegram-plane fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path class="color-icn" fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg>
                                 </a>
-                                <a href="#" class="social-link vk-icn">
+                                <a href="https://vk.com/id618849344" target="blank"  class="social-link vk-icn">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vk" class="svg-inline--fa fa-vk fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="color-icn" fill="currentColor" d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg>  
                                 </a>
-                                <a href="#" class="social-link facebook-icn">
+                                <a href="https://www.facebook.com/profile.php?id=100031460761671" target="blank" class="social-link facebook-icn" target="blank">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path class="color-icn" fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
                                 </a>
                             </nav>
-                            <a href="mailto:lidama65@mail.ua" class="text-link">lidama65@mail.ua</a>
+                            <a href="mailto:artem.tolmachev@internet.ru" class="text-link">artem.tolmachev@internet.ru</a>
                         </div>
                     </div> 
                 </div>
             </div>    
             <!-- //sectio-block-profession -->
         </header>
-   <!--// header -->
-   <!-- section-portfolio -->
-        <section class="section-portfolio">
+         <!--// header -->
+         <!-- section-portfolio -->
+        <section class="section-portfolio" id="works">
             <div class="container">
                 <h2 class="title-h2 bottom-line">Портфолио</h2>
                 <div class="section-portfolio_works">
@@ -167,10 +169,11 @@
                     </div>
                     <div class="portfolio-content" id="portfolio-projects">
                     
-                        <a class="mix boot portfolio-big-card__link " href="https://artemtolmachev.github.io/forest/#">
+                        <a class="mix boot portfolio-big-card__link" target="blank" href="https://artemtolmachev.github.io/forest/#">
                             <div class="big-card__img">
                                 <span class="button">Смотреть проект</span>
-                                <img src="./img/portfolio-img/descover1.jpg" width="556" alt="foto-card">
+                                <div class="forest-logo">ФорестTревел</div>
+                                <img src="./img/portfolio-img/forest-last.jpg" width="556" alt="foto-card">
                             </div>
                             <div class="big-card__title">
                                 <h4 class="title-h4">Верстка “Форест тревел”</h4>
@@ -178,40 +181,42 @@
                             </div>    
                         </a>
                     
-                        <a class="mix wr front portfolio-big-card__link "  href="#!">
+                        <a class="mix wr front portfolio-big-card__link" target="blank" href="https://artemtolmachev.github.io/unit/">
                             <div class="big-card__img">
                                 <span class="button">Смотреть проект</span>
-                                <img src="./img/portfolio-img/iMac-With-Spheres-Free-Mockup.jpg" width="556" alt="foto-card">  
+                                <div class="unit-overlay"></div>
+                                <div class="unit-logo">ЮНИТ</div>
+                                <img src="./img/portfolio-img/unit-img.jpg" width="556" alt="foto-card">  
                             </div>                               
                             <div class="big-card__title">
-                                <h4 class="title-h4">Сайт для коворкинга “Ме<span class="span-none">чта”</span></h4>
+                                <h4 class="title-h4">Сайт для коворкинга “Юн<span class="span-none">ит”</span></h4>
                                 <p>Верстка лендинга. </p>
                             </div>      
                         </a>
                     
-                        <a class="mix wr front boot portfolio-small-card_link " href="#!">
+                        <a class="mix wr front boot portfolio-small-card_link" target="blank" href="https://artemtolmachev.github.io/bike/">
                             <div class="small-card__img ">
                                 <span class="button">Смотреть проект</span>
-                                <img src="./img/portfolio-img/madcap3.jpg" width="360" alt="foto-card">
+                                <img src="./img/portfolio-img/bike.png" width="611" alt="foto-card">
                             </div>                                 
                             <div class="small-card__title">
                                 <h5 class="title-h5">Верстка “Мир Авто”</h5>
-                                <p>Верстка многостраничного сайта. </p>  
+                                <p>Верстка сайта. </p>  
                             </div>   
                         </a>
 
-                        <a class="mix wr boot front portfolio-small-card_link "  href="#!" >
+                        <a class="mix wr boot front portfolio-small-card_link" target="blank"  href="https://artemtolmachev.github.io/book/" >
                             <div class="small-card__img">
                                 <span class="button">Смотреть проект</span>
-                                <img src="./img/portfolio-img/iphon4.jpg" width="360" alt="foto-card">
+                                <img src="./img/portfolio-img/book-img.jpg" width="970" alt="foto-card">
                             </div>
                             <div class="small-card__title">
-                                <h5 class="title-h5">Верстка “Мир Авто”</h5>
-                                <p>Верстка многостраничного сайта.</p>
+                                <h5 class="title-h5">Верстка “Book”</h5>
+                                <p>Верстка сайта.</p>
                             </div>  
                         </a>
                     
-                        <a class="mix front boot portfolio-small-card_link none " href="#!">
+                        <a class="mix front boot portfolio-small-card_link none" target="blank" href="#!">
                             <div class="small-card__img">
                                 <span class="button">Смотреть проект</span>
                                 <img src="./img/portfolio-img/blueOrange5.jpg" width="360" alt="foto-card">
@@ -226,8 +231,8 @@
                 </div>
             </div>
         </section>
-    <!-- //section-portfolio -->
-    <!-- timeline -->
+        <!-- //section-portfolio -->
+        <!-- timeline -->
         <section class="timeline">
             <div class="container">
                 <h2 class="title-h2 bottom-line">Как я работаю</h2>
@@ -296,73 +301,76 @@
                 </div>
             </div>
         </section>
-    <!-- //timeline -->
-    <section class="contacts">
-        <div class="container">
-            <h2 class="title-h2 bottom-line">Контакты</h2>
-            <img src="./img/contacts-img/Dot.png" class="img-dot" alt="часть фона">
-            <img src="./img/contacts-img/quotes.png" class="img-quotes" alt="часть фона">
-            <div class="contacts__center">
-                <div class="contacts__left-col">
-                    <p>
-                        Если вы ищите специалиста по верс<br>тке сайтов, front-end разработчика в команду или для работы над проек<br>том — напишите мне.
-                    </p>
-                    <div class="contacts__links">
-                        <p>Email <a href="mailto:lidama65@mail.ua">tolmachev.Artem@mail.ua</a></p>
-                        <p>Skype<a href="skype:artem.Tolmachev?chat"> artemViktor.Tolmachev</a></p>
-                        <p>Телефон<a href="tel:+380972890266"> +38(097)2890266</a></p>
-                        <p>Адрес <a href="#">Украина Мариуполь </a></p>
+        <!-- //timeline -->
+        <!-- section-contacts -->
+        <section class="contacts" id="conection">
+            <div class="container">
+                <h2 class="title-h2 bottom-line">Контакты</h2>
+                <img src="./img/contacts-img/bg-dots.png" class="bg-dots" alt="часть фона">
+                <div class="contacts__center">
+                    <div class="contacts__left-col">
+                        <p>
+                            Если вы ищите специалиста по верс<br>тке сайтов, front-end разработчика в команду или для работы над проек<br>том — напишите мне.
+                        </p>
+                        <ul class="contacts__links">
+                            <li>Email<a href="mailto:artem.tolmachev@internet.ru" target="blank">artem.tolmachev@internet.ru</a></li>
+                            <li>Телефон<a href="tel:+380972890266">+38(097)2890266</a></li>
+                            <li>Skype<a href="skype:Artem Tolmachev?chat" target="blank">Artem Tolmachev</a></li>
+                            <li>Адрес <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D0%B8%D1%83%D0%BF%D0%BE%D0%BB%D1%8C" target="blank">Украина Мариуполь </a></li>
+                        </ul>
+                        <nav class="social-nav">
+                            <a href="https://github.com/artemTolmachev" target="blank" class="github-icn">
+                                <svg id="github-size" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-lg" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path class="git" fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                            </a>
+                            <a href="tg://msg?text=<?php echo urlencode( '<TEXT>' ); ?>&to=<PHONE>+380972890266</PHONE>" class="social-link telegram-icn"  target="blank">
+                                <svg  aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram-plane" class="svg-inline--fa fa-telegram-plane fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path class="color-icn" fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg>
+                            </a>
+                            <a href="https://vk.com/id618849344" class="social-link vk-icn" target="blank">
+                                <svg  aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vk" class="svg-inline--fa fa-vk fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="color-icn" fill="currentColor" d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg>  
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100031460761671" class="social-link facebook-icn" target="blank">
+                                <svg  aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path class="color-icn" fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                            </a>
+                        </nav>
                     </div>
-                    <nav class="social-nav">
-                        <a href="#" class="github-icn">
-                            <svg id="github-size" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-lg" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path class="git" fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-                        </a>
-                        <a href="#" class="social-link telegram-icn">
-                            <svg  aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram-plane" class="svg-inline--fa fa-telegram-plane fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path class="color-icn" fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg>
-                        </a>
-                        <a href="#" class="social-link vk-icn">
-                            <svg  aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vk" class="svg-inline--fa fa-vk fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="color-icn" fill="currentColor" d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg>  
-                        </a>
-                        <a href="#" class="social-link facebook-icn">
-                            <svg  aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path class="color-icn" fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
-                        </a>
-                    </nav>
-                </div>
-                <div class="contacts__right-col">
-                    <form class="contact-form" action="php/mail.php">
-                        <div class="form-item">
-                            <span class="fake-placeholder">Ваш Email</span>
-                            <input class="form-field" type="text" name="email">
-                        </div>
-                        <div class="form-item">
-                            <span class="fake-placeholder">Тема письма</span>
-                            <input class="form-field" type="text" name="subject">
-                        </div>
-                        <div class="form-item">
-                            <span class="fake-placeholder">Сообщение</span>
-                                <textarea class="form-field" name="message"></textarea>
-                        </div>
-                        <div class="form-item">
-                            <input class="btn" type="submit" value="Отправить">
-                        </div>
-                    </form>
-                    <div id="answer"></div>
+                    <div class="contacts__right-col">
+                        <form class="contact-form" action="php/mail.php">
+                            <div class="form-item">
+                                <span class="fake-placeholder">Ваш Email</span>
+                                <input class="form-field" type="text" name="email">
+                            </div>
+                            <div class="form-item">
+                                <span class="fake-placeholder">Тема письма</span>
+                                <input class="form-field" type="text" name="subject">
+                            </div>
+                            <div class="form-item">
+                                <span class="fake-placeholder">Сообщение</span>
+                                    <textarea class="form-field" name="message"></textarea>
+                            </div>
+                            <div class="form-item">
+                                <input class="btn" type="submit" value="Отправить">
+                            </div>
+                        </form>
+                        <div id="answer"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__text">
-                <p>
-                    &copy; 2019 — Юрий Ключевский 
-                </p>
-                <p>
-                    Веб-разработчик из Москвы, занима<br>юсь версткой и созданием сайтов.<br> Этот сайт сделал в рамках прохожд<br>ения обучения по верстке на курсах от <a href="http://WebCademy.ru">WebCademy.ru</a>
-                </p>
+        </section>
+            <!-- //section-contacts -->
+            <!-- section-footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__text">
+                    <p>
+                        &copy; 2019 — Юрий Ключевский 
+                    </p>
+                    <p>
+                        Веб-разработчик из Москвы, занима<br>юсь версткой и созданием сайтов.<br> Этот сайт сделал в рамках прохожд<br>ения обучения по верстке на курсах от <a href="http://WebCademy.ru">WebCademy.ru</a>
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+        <!-- //section-footer -->
         <script src="libs/jquery/jquery-3.0.0.min.js"></script>
         <script src="libs/mixitup3/mixitup.min.js"></script>
         <script src="libs/jquery.validate/jquery.validate.js"></script>

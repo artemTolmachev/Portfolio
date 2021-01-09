@@ -2,7 +2,7 @@ $(document).ready(function(){
     const toggleMenu = document.querySelector('.toggle-menu'); //иконкагамбургер
     const mobMenu = document.querySelector('.mobile-menu'); //мобильное меню
     const overlay = document.querySelector('.overlay'); //затемняющий фон при активном мобильном меню
-    const nonescroll = document.querySelector('body'); //блокировка скролла при ативном моб меню
+    const nonescroll = document.querySelector('body'); //блокировка скролла при активном моб меню
 
 
     toggleMenu.addEventListener('click', function(){
@@ -15,7 +15,7 @@ $(document).ready(function(){
         this.classList.remove('active-menu');
         toggleMenu.classList.remove('active');
         overlay.classList.remove('active');
-        nonescroll.classList.remove('active');
+        nonescroll.classList.remove('nonescroll');
     });
     overlay.addEventListener('click', function(){
         this.classList.remove('active');
