@@ -72,20 +72,19 @@ background-color: transparent;
 }
     
 .container {
-    width: 100%;
     max-width: 320px;
     padding: 0 15px;
     margin: 0 auto;
 
-        @media(min-width: 576px) {
-        max-width: 330px;
+    @media(min-width: 576px) {
+        min-width: 360px;
     }
     @media(min-width: 768px) {
         max-width: 745px;
-        
+        min-width: auto;
     }
     @media(min-width:992px) {
-        max-width: 960px;
+        max-width: 900px;
     }
     @media(min-width:1200px) {
         max-width: 1140px;
@@ -176,19 +175,7 @@ background-color: transparent;
         border: 4px solid #1c1c1c;
     }
 } 
-h3.title-h3 {
-font-size: 30px;
-font-weight: 800;
 
-@media(min-width: 768px) {
-    
-    
-}
-@media(min-width:1200px) {
-    font-size: 40px;
-}
-
-}
 .social-nav {
     display: flex;
     position: relative;
@@ -314,6 +301,15 @@ a svg .color-icn {
 .title-h2 {
     font-size: 64px;
     font-weight: 800;
+}
+h3.title-h3 {
+    font-size: 30px;
+    font-weight: 800;
+    
+    @media(min-width:1200px) {
+        font-size: 40px;
+    }
+    
 }
 .title-h4 {
     font-size: 32px;
