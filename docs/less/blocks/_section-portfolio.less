@@ -44,15 +44,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 47px;
-    .none {
-        display: none;
-    }
-    
-    }
-    @media(min-width: 1200px) {
-        .none {
-            display: block;
-        }
+
     }
 }
 .section-portfolio {
@@ -101,14 +93,8 @@
         font-size: 24px;
         color: #8fa5ae;
         font-weight: 800;
-    
-    
-        &:hover {
-            color: var(--red);
-        }
-        &:active {
-            color: var(--text);  
-        }
+
+
     }
     @media(min-width: 1200px) {
         font-size: 28px;
@@ -120,9 +106,12 @@
     color: #000;
 }
 .portfolio-nav button {
-    
+    cursor: auto;
 
     @media(min-width: 768px) {
+        &:first-child {
+            color: var(--text);
+        }
         &:nth-child(2) {
             margin-left: 20px;
         }
@@ -166,9 +155,6 @@
     @media(min-width: 768px) {
     margin-top: 37px;
     
-    }
-    @media(min-width: 1200px) {
-       display: none;
     }
 }
 

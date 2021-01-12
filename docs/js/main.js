@@ -27,21 +27,22 @@ $(document).ready(function(){
         
    
     // mixitUp
-    let containerEl = document.querySelector('#portfolio-projects');
-    let mixer = mixitup(containerEl, {
-        classNames: {
-            block: ""
-         }
+    // let containerEl = document.querySelector('#portfolio-projects');
+    // let mixer = mixitup(containerEl, {
+    //     classNames: {
+    //         block: ""
+    //      }
      
-    });
+    // });
     //  кнопки фильтрации активный цвет 
-    $(function() {
-        $("#btn .portfolio-nav_projects").click(function() {
-            $("#btn .portfolio-nav_projects").removeClass("actives");         
-            $(this).toggleClass("actives");
-        })
-    });
-    // для формы 
+    // $(function() {
+    //     $("#btn .portfolio-nav_projects").click(function() {
+    //         $("#btn .portfolio-nav_projects").removeClass("actives");         
+    //         $(this).toggleClass("actives");
+    //     })
+    // });
+
+    //  форма
     const formItems = document.querySelectorAll('.form-field');
      
     for(let item of formItems){
@@ -62,35 +63,35 @@ $(document).ready(function(){
     })
     }
 //form validate
-$('.contact-form').validate({
-    rules: {
-        email: {
-            required: true,
-            email: true
+    $('.contact-form').validate({
+        rules: {
+            email: {
+                required: true,
+                email: true
+            },
+            subject: {
+                required: true
+            },
+            message: {
+                required: true
+            }
         },
-        subject: {
-            required: true
+        messages: {
+            email: {
+                required: 'Введите email',
+                email: 'отсутствует символ @'
+            },
+            subject: {
+                required: 'Введите тему сообщения'
+            },
+            message: {
+                required: 'Введите текст сообщения'
+            }
         },
-        message: {
-            required: true
+        submitHandler: function (form) {
+            ajaxFormSubmit();
         }
-    },
-    messages: {
-        email: {
-            required: 'Введите email',
-            email: 'отсутствует символ @'
-        },
-        subject: {
-            required: 'Введите тему сообщения'
-        },
-        message: {
-            required: 'Введите текст сообщения'
-        }
-    },
-    submitHandler: function (form) {
-        ajaxFormSubmit();
-    }
-})
+    })
 // функция AJAX запроса на сервер 
 function ajaxFormSubmit() {
     let string = $(".contact-form").serialize(); //сохраняем данные введенные в форму в строку
@@ -107,6 +108,45 @@ $.ajax({
 });
 return false;
 }
-})
+// отображение и скрытие карточек портфолио по клику
 
+
+
+// отображение и скрытие карточек портфолио при ресайзе
+$(window).on ('resize',function(){
+    if($(window).width() <1200){
+        $('.portfolio-small-card_link.card-hide').hide();
+        $('.all-projects').fadeIn();
+    }
+    else{
+        $('.portfolio-small-card_link.card-hide').fadeIn();
+        $('.all-projects').hide();
+    }
+});
+
+//  скрытие карточек при < 1200
+    if($(window).width() <1200){
+        $('.portfolio-small-card_link.card-hide').hide();   
+    }
+    else{
+    $('.portfolio-small-card_link.card-hide').fadeIn();
+    $('.all-projects').hide();  
+
+    } 
+// Отображение, скрытие карточек и смена слова кнопки по клику
+    $('.all-projects').click(function(){
+        if($('.all-projects').hasClass('first')){
+            $('.all-projects').text('Скрыть');
+            $('.all-projects').removeClass('first');
+            $('.all-projects').addClass('second');
+            $('.portfolio-small-card_link.card-hide').fadeIn();
+        }
+        else{
+            $('.all-projects').text('Смотреть все работы');
+            $('.all-projects').removeClass('second');
+            $('.all-projects').addClass('first'); 
+            $('.portfolio-small-card_link.card-hide').hide();
+        }
+    });
+})
 
