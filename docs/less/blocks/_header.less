@@ -136,6 +136,12 @@
             border: 4px dotted var(--red);
         }
 }
+.header-nav-icn {
+    display: none;
+    @media(min-width:1200px) {
+        display: block;
+    }
+}
 .header-nav-icn a svg path {
     transition: fill .5s;
 }
@@ -207,10 +213,7 @@
     
     }
 .toggle-menu {
-    @media(min-width: 768px) {
-    
-    
-    }
+
     @media(min-width:1200px) {
        display: none;
     }
@@ -223,50 +226,34 @@
 }
 
 #head-nav__in-size {
-    display: none;
 
-    @media(min-width: 768px) {
-    
-    
-    }
     @media(min-width:1200px) {
         width: 28px;
         height: auto;
-        display: inline-block;
     }
     
   
 }
 #head-nav__git-size {
-    display: none;
 
-    @media(min-width: 768px) {
-    
-    
-    }
     @media(min-width:1200px) {
         width: 28px;
         height: auto;
-        display: inline-block;
+
     }
     
   
 }
 #head-nav__vk-size {
-    display: none;
 
     @media(min-width:1200px) {
         width: 32px;
         height: auto;
-        display: inline-block;
     }
-    
-  
 }
 
 .head-nav_icn-color {
     fill: #000;
-   
 }
 
 
