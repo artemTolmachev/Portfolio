@@ -5,8 +5,6 @@
     background-repeat: repeat;
     position: relative; 
     
-
-    
         h2 {
     display: block;
     width: fit-content;
@@ -45,10 +43,6 @@
         font-size: 64px;
     }
 }
-    #answer .contact-form__success h2 {
-        color: red;
-        font-size: 22px;
-    }
 }
 .contacts__center {
     position: relative;
@@ -448,5 +442,16 @@ label.error {
         transform: translate(-27%, -75%);
     }
 }
+#answer .contact-form__success h2 { 
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--red);
+    font-size: 20px;  
+    border: 2px solid;
+    padding: 25px 8px 35px;
+    line-height: 1.5;
 
-  
+    @media(min-width: 1200px) {
+        font-size: 28px; 
+    }
+}

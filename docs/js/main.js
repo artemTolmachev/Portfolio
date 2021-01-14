@@ -144,5 +144,40 @@ $(window).on ('resize',function(){
             $('.portfolio-small-card_link.card-hide').hide();
         }
     });
+// иконка скролл вверх
+    // $('#back-top').hide();
+    //     $(window).scroll(function(){
+    //         if($(this).scrollTop() > 300 ){
+    //         $('#back-top').fadeIn();
+    //         }
+    // else{
+    // $('#back-top').fadeOut();
+    // }
+    // }); 
+
+    // показать кнопку скролл вверх
+    $('#back-top').hide();
+    $(window).scroll(function(){
+        if($(this).width() < 1200){
+            if( $(this).scrollTop() > 300 ){
+                $('#back-top').fadeIn();
+            }
+            else{
+                $('#back-top').fadeOut();
+            }
+        }
+    });
+// nave-page 
+    $('#page-nav').onePageNav({
+        currentClass: 'active',
+        changeHash: false,
+        scrollSpeed: 750,
+        scrollThreshold: 0.5,
+        filter: '',
+        easing: 'swing',
+        begin: function () {},
+        end: function () {},
+        scrollChange: function ($currentListItem) {}
+    });
 })
 

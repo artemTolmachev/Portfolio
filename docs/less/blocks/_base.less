@@ -319,3 +319,64 @@ h3.title-h3 {
     font-size: 26px;
     font-weight: 700;
 }
+#back-top {   //кнопка скролл вверх 
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 5;
+    font-size: 50px;
+    color: var(--red);
+    font-weight: 700;
+    transition: .5s;
+
+    &:hover {
+        color: rgb(139, 8, 129);
+    }
+    &:active {
+        color:  green;
+    }
+}  
+ 
+#arrow-size {  
+    width: 50px;
+    height: 50px;
+
+}
+#page-nav {   //боковые кнопки навигации
+    display: none;
+    @media(min-width: 1200px) {
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 50%;
+        z-index: 5;
+    }
+}
+#page-nav li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(139, 8, 128, 0.7);
+    transition: .5s;
+
+    &:hover {
+        background-color: rgb(139, 8, 128);
+    }
+}
+#page-nav {
+    li + li {
+        margin-top: 20px;
+    }
+}
+#page-nav li a {
+    height: 100%;
+    display: block;
+}
+#page-nav li.active {
+     background-color: rgba(0, 128, 1, 0.7);
+
+     &:hover {
+        background-color: rgb(0, 128, 1);
+    }
+}
+
