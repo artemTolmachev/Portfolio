@@ -279,7 +279,7 @@
          &:first-child {
         .form-field {
             top: 26px;
-            height: 62px;
+            height: 64px;
         }
         .fake-placeholder {
             top: 26px;
@@ -290,10 +290,10 @@
         }
         &:nth-child(2) {
             .form-field {
-                height: 85px;
+                height: 87px;
             }
             .fake-placeholder {
-                top: 47px;
+                top: 20px;
             }
             .active {
                 top: 6px;
@@ -301,8 +301,20 @@
         }
         &:nth-child(3) {
             .form-field {
+                height: 88px;
+                padding-bottom: 27px;
+            }
+            .fake-placeholder {
+                top: 20px;
+            }
+            .active {
+                top: 6px;
+            }
+        }
+        &:nth-child(4) {
+            .form-field {
                 padding-top: 26px;
-                height: 161px;
+                height: 160px;
                 }
             .fake-placeholder {
                 top: 44px;
@@ -325,21 +337,26 @@
     @media(min-width: 768px) {
         &:first-child {
             .form-field {
-                height: 62px;
+                height: 60px;
             }  
         }
        &:nth-child(2) {
         .form-field {
-            height: 86px;
+            height: 87px;
         } 
         .fake-placeholder {
-            top: 48px;
+            top: 30px;
         }  
         .active {
-            top: 16px;
+            top: 8px;
         }
         }
-        &:nth-child(3) {
+        &:nth-child(2) {
+            .form-field {
+                height: 86px;
+            } 
+        }
+        &:nth-child(4) {
             .form-field {
                 height: 161px;
                 padding-top: 33px;
@@ -394,13 +411,25 @@
                 padding-bottom: 41px;
             }
             .fake-placeholder {
-                top: 70px;
+                top: 30px;
             }
             .active {
                 top: 6px;
             }
         }
         &:nth-child(3) {
+            .form-field {
+                height: 100px;
+                padding-bottom: 35px;
+            }
+            .fake-placeholder {
+                top: 30px;
+            }
+            .active {
+                top: 10px;
+            }
+        }
+        &:nth-child(4) {
             .form-field {
                 padding-top: 26px;
                 height: 173px;
