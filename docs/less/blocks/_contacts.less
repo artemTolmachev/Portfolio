@@ -243,7 +243,7 @@
     height: min-content;
     margin-top: 0;
     width: 47%;
-    padding: 38px 23px 41px 23px;
+    padding: 38px 23px 24px 23px;
     }
     @media(min-width: 1200px) {
     padding: 38px 60px 42px 64px;
@@ -276,6 +276,9 @@
             border-bottom: 1px solid var(--red);
         }
         }
+        .fake-placeholder {
+            top: 54px;
+        }
          &:first-child {
         .form-field {
             top: 26px;
@@ -292,9 +295,6 @@
             .form-field {
                 height: 87px;
             }
-            .fake-placeholder {
-                top: 20px;
-            }
             .active {
                 top: 6px;
             }
@@ -303,9 +303,6 @@
             .form-field {
                 height: 88px;
                 padding-bottom: 27px;
-            }
-            .fake-placeholder {
-                top: 20px;
             }
             .active {
                 top: 6px;
@@ -316,9 +313,6 @@
                 padding-top: 26px;
                 height: 160px;
                 }
-            .fake-placeholder {
-                top: 44px;
-            }
             .active {
                 top: 6px;
             }
@@ -331,7 +325,7 @@
         width: 100%;
         font-size: 20px;
         height: 54px;
-        margin-top: 13px;
+        margin-top: 16px;
         line-height: 46px;
     }
     @media(min-width: 768px) {
@@ -343,27 +337,22 @@
        &:nth-child(2) {
         .form-field {
             height: 87px;
-        } 
-        .fake-placeholder {
-            top: 30px;
         }  
         .active {
             top: 8px;
         }
         }
-        &:nth-child(2) {
+        &:nth-child(3) {
             .form-field {
                 height: 86px;
             } 
         }
         &:nth-child(4) {
             .form-field {
-                height: 161px;
+                height: 108px;
                 padding-top: 33px;
             }  
-            .fake-placeholder {
-                top: 44px;
-            }
+
             .active {
                 top: 12px;
             }
