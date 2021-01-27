@@ -109,41 +109,42 @@ $.ajax({
 return false;
 }
 // отображение и скрытие карточек портфолио при ресайзе
-$(window).on ('resize',function(){
+$(window).on('resize',function(){
     if($(window).width() <1200){
-        $('.portfolio-small-card_link.card-hide').hide();
+        $('.small-card__link.card-hide').hide();
         $('.all-projects').fadeIn();
     }
     else{
-        $('.portfolio-small-card_link.card-hide').fadeIn();
+        
         $('.all-projects').hide();
+        $('.small-card__link.card-hide').fadeIn();
     }
 });
 
 //  скрытие карточек при < 1200
     if($(window).width() <1200){
-        $('.portfolio-small-card_link.card-hide').hide();   
+        $('.small-card__link.card-hide').hide();   
     }
     else{
-    $('.portfolio-small-card_link.card-hide').fadeIn();
+    $('.small-card__link.card-hide').fadeIn();
     $('.all-projects').hide();  
 
     } 
-// Отображение, скрытие карточек и смена слова кнопки по клику
-    // $('.all-projects').click(function(){
-    //     if($('.all-projects').hasClass('first')){
-    //         $('.all-projects').text('Скрыть');
-    //         $('.all-projects').removeClass('first');
-    //         $('.all-projects').addClass('second');
-    //         $('.portfolio-small-card_link.card-hide').fadeIn();
-    //     }
-    //     else{
-    //         $('.all-projects').text('Смотреть все работы');
-    //         $('.all-projects').removeClass('second');
-    //         $('.all-projects').addClass('first'); 
-    //         $('.portfolio-small-card_link.card-hide').hide();
-    //     }
-    // });
+// Отображение, скрытие карточек и смена "скрыть","показать" по клику
+    $('.all-projects').click(function(){
+        if($('.all-projects').hasClass('first')){
+            $('.all-projects').text('Скрыть');
+            $('.all-projects').removeClass('first');
+            $('.all-projects').addClass('second');
+            $('.small-card__link.card-hide').fadeIn();
+        }
+        else{
+            $('.all-projects').text('Смотреть все работы');
+            $('.all-projects').removeClass('second');
+            $('.all-projects').addClass('first'); 
+            $('.small-card__link.card-hide').hide();
+        }
+    });
 // иконка скролл вверх
     // $('#back-top').hide();
     //     $(window).scroll(function(){
