@@ -25,22 +25,6 @@ $(document).ready(function(){
     });
 
         
-   
-    // mixitUp
-    // let containerEl = document.querySelector('#portfolio-projects');
-    // let mixer = mixitup(containerEl, {
-    //     classNames: {
-    //         block: ""
-    //      }
-     
-    // });
-    //  кнопки фильтрации активный цвет 
-    // $(function() {
-    //     $("#btn .portfolio-nav_projects").click(function() {
-    //         $("#btn .portfolio-nav_projects").removeClass("actives");         
-    //         $(this).toggleClass("actives");
-    //     })
-    // });
 
     //  форма
     const formItems = document.querySelectorAll('.form-field');
@@ -122,7 +106,7 @@ $(window).on('resize',function(){
 });
 
 //  скрытие карточек при < 1200
-    if($(window).width() <1200){
+    if($(window).width() < 1200){
         $('.small-card__link.card-hide').hide();   
     }
     else{
@@ -133,28 +117,19 @@ $(window).on('resize',function(){
 // Отображение, скрытие карточек и смена "скрыть","показать" по клику
     $('.all-projects').click(function(){
         if($('.all-projects').hasClass('first')){
-            $('.all-projects').text('Скрыть');
+            $('.all-projects').text('hide');
             $('.all-projects').removeClass('first');
             $('.all-projects').addClass('second');
             $('.small-card__link.card-hide').fadeIn();
         }
         else{
-            $('.all-projects').text('Смотреть все работы');
+            $('.all-projects').text('all projects');
             $('.all-projects').removeClass('second');
             $('.all-projects').addClass('first'); 
             $('.small-card__link.card-hide').hide();
         }
     });
-// иконка скролл вверх
-    // $('#back-top').hide();
-    //     $(window).scroll(function(){
-    //         if($(this).scrollTop() > 300 ){
-    //         $('#back-top').fadeIn();
-    //         }
-    // else{
-    // $('#back-top').fadeOut();
-    // }
-    // }); 
+
 
     // показать кнопку скролл вверх
     $('#back-top').hide();
@@ -168,6 +143,7 @@ $(window).on('resize',function(){
             }
         }
     });
+
 // nave-page 
     $('#page-nav').onePageNav({
         currentClass: 'active',
@@ -199,5 +175,9 @@ $(window).on('resize',function(){
     $('.phone').click(function () {
         $(this).setCursorPosition(1); // set position number
     });
+    
+    AOS.init({
+        once: true
+    })
 })
 
