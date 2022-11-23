@@ -93,42 +93,42 @@ $.ajax({
 return false;
 }
 // отображение и скрытие карточек портфолио при ресайзе
-$(window).on('resize',function(){
-    if($(window).width() <1200){
-        $('.small-card__link.card-hide').hide();
-        $('.all-projects').fadeIn();
-    }
-    else{
+// $(window).on('resize',function(){
+//     if($(window).width() <1200){
+//         $('.small-card__link.card-hide').hide();
+//         $('.all-projects').fadeIn();
+//     }
+//     else{
         
-        $('.all-projects').hide();
-        $('.small-card__link.card-hide').fadeIn();
-    }
-});
+//         $('.all-projects').hide();
+//         $('.small-card__link.card-hide').fadeIn();
+//     }
+// });
 
 //  скрытие карточек при < 1200
-    if($(window).width() < 1200){
-        $('.small-card__link.card-hide').hide();   
-    }
-    else{
-    $('.small-card__link.card-hide').fadeIn();
-    $('.all-projects').hide();  
+    // if($(window).width() < 1200){
+    //     $('.small-card__link.card-hide').hide();   
+    // }
+    // else{
+    // $('.small-card__link.card-hide').fadeIn();
+    // $('.all-projects').hide();  
 
-    } 
+    // } 
 // Отображение, скрытие карточек и смена "скрыть","показать" по клику
-    $('.all-projects').click(function(){
-        if($('.all-projects').hasClass('first')){
-            $('.all-projects').text('hide');
-            $('.all-projects').removeClass('first');
-            $('.all-projects').addClass('second');
-            $('.small-card__link.card-hide').fadeIn();
-        }
-        else{
-            $('.all-projects').text('all projects');
-            $('.all-projects').removeClass('second');
-            $('.all-projects').addClass('first'); 
-            $('.small-card__link.card-hide').hide();
-        }
-    });
+    // $('.all-projects').click(function(){
+    //     if($('.all-projects').hasClass('first')){
+    //         $('.all-projects').text('hide');
+    //         $('.all-projects').removeClass('first');
+    //         $('.all-projects').addClass('second');
+    //         $('.small-card__link.card-hide').fadeIn();
+    //     }
+    //     else{
+    //         $('.all-projects').text('all projects');
+    //         $('.all-projects').removeClass('second');
+    //         $('.all-projects').addClass('first'); 
+    //         $('.small-card__link.card-hide').hide();
+    //     }
+    // });
 
 
     // показать кнопку скролл вверх
