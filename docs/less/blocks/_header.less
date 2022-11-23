@@ -7,13 +7,14 @@
     }
     @media(min-width:1200px) {
         height: auto;
-        padding: 83px 0 240px;
+        
         background-image: url(../img/header-img/bg/header-bg.jpg);
         background-size: auto;
         background-position: center;
         background-repeat: repeat;
-        
-        
+    }
+    @media(min-width:1400px){
+        padding: 83px 0 140px;
     }
 }
 
@@ -31,10 +32,10 @@
         justify-content: space-between;
         align-items: center; 
         margin: 0 auto;
-        padding: 0 15px;
         max-width: 285px;
 
     @media(min-width: 420px) {
+        padding: 0 15px;
         max-width: 600px;
     }
     @media(min-width: 768px) {
@@ -43,59 +44,92 @@
         
     }
     @media(min-width: 992px) {
-        max-width: 870px;
+        max-width: 916px;
     }
     @media(min-width: 1200px) {
-        padding: 0;
+        padding: 15px;
         max-width: 1410px;
         max-width: auto;
 
     }
 }
-.logo .bottom-line {
-    position: relative;
-    font-size: 42px;
-    font-weight: 900;
-    line-height: 1.2;
-    z-index: 1;
-    color: var(text);
 
-    &::after { 
-        content: "";
-        height: 10px;
-        width: 105%;
-        background-color: var(--yelou);
-        left: -5px;
-        bottom: 5px;
-        transition: background .5s;
-    }
-}
-.logo {
+// .logo {
     
-    &:hover .bottom-line::after {
-        content: "";
-        background-color: #ea736d;     
- }
+//     &:hover .bottom-line::after {
+//         content: "";
+//         background-color: var(--blue-hover);     
+//  }
+// }
+
+
+.main-header > div {
+    background-color: #1646a129;
+    margin-top: -6px;
 }
-
-
-
 
 .main-header {
-    font-size: 42px;
+    font-family: 'Oswald', sans-serif;
+    color: var(--blue-dark);
+    font-size: 50px;
     font-weight: 800;
     line-height: 1.1;
+    
+    .item-small{
+        font-size: 27px;
+        
+    }
 
+    &__item:nth-child(1){
+        padding: 0px 34px;
+        width: 10vw;
+        margin-left: 37px;
+        
+    }
+    &__item:nth-child(3){
+        
+        padding: 0px 34px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+    }
+    &__item:nth-child(3)::after{
+        flex: 0 0 70px;
+        content: '';
+        margin-left: 10px;
+        height: 5px;
+        background-color: var(--blue-dark);
+    }
+    &__item:nth-child(4){
+     
+        margin-top: 7px;
+        margin-left: 39%;
+        padding: 5px 10px;
+        width: fit-content;
+        background-color: var(--blue-dark);
+        color: white;
+        font-size: 20px;
+    }
     @media(min-width: 768px) {
+        max-width: 357px;
+        // font-weight: 800;
+        // font-size: 52px;
+        font-size: 80px;
+
+        .item-small{
+            font-size: 50px;
+        }
+
+        &__item:nth-child(4){
+            font-size: 35px;
+        }
+    }
+    @media(min-width: 992px){
         max-width: 395px;
-        font-weight: 800;
-        font-size: 52px;
-        line-height: 1.2;
     }
    
     @media(min-width:1200px) {
         font-size: 90px;
-        line-height: 1.17;
     }
     
 }
@@ -132,9 +166,7 @@
         left: -5px;
         bottom: 1px;
         }
-        &:focus {
-            border: 4px dotted var(--red);
-        }
+
 }
 .header-nav-icn {
     display: none;
@@ -241,8 +273,54 @@
 .head-nav_icn-color {
     fill: #000;
 }
+//=========== anime-logo ============
+.ml1 {
+    font-weight: 900;
+    font-size: 2em;
+    color: white;
+    display: none;
 
+    @media(min-width: 420px) {
+        display: inline-block;
+    }
 
+    @media(min-width: 992px) {
+        font-size: 2em;
+    }
 
+    @media(min-width: 1200px) {
+        font-size: 2.5em;
+    }
 
+  }
+  
+  .ml1 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+  .ml1 .text-wrapper {
+    padding: 0px 16px 0px 16px;
+    position: relative;
+    display: inline-block;
+    background-color: var(--blue-dark);
 
+  }
+  
+  .ml1 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    transform-origin: 0 0;
+  }
+  .line1, .line2{
+    background-color: white;
+  }
+ 
+  
+  .ml1 .line1 { top: 5px; }
+  .ml1 .line2 { bottom: 5px; }
+
+  //=========== anime-logo // ============

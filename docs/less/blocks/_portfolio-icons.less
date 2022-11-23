@@ -1,0 +1,726 @@
+.portfolio-icons{
+    position: absolute;
+    padding: 9px 8px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 9;
+    h3{
+        color: white;
+        margin-right: 10px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    &__cover {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid white;
+        path{
+            fill: white;
+        }
+        &:not(:last-child){
+            margin-right: 6px;
+        }
+    }
+    &__cover-gulp{
+        padding: 4px 10px;
+    }
+    &__cover-html{
+        padding: 5px 7px;
+    }
+    &__cover-xml{
+        padding: 5px;
+    }
+    &__cover-css{
+        padding: 5px 7px;
+    }
+    &__cover-js{
+        padding: 5px 6px;
+    }
+    &__cover-php{
+        padding: 3px 2px;
+    }
+    &__cover-jequery{
+        padding: 2px 7px;
+    }
+    &__cover-sass{
+        padding: 3px 5px;
+    }
+    &__cover-react{
+        padding: 3px 6px;
+    }
+    &__cover-figma{
+        padding: 5px 8px;
+    }
+    &__cover-firebase{
+        padding: 3px 7px;
+    }
+    &__cover-redux-toolkit{
+        padding: 2px 7px;
+    }
+}
+
+
+//===============  min-width: 768px  ======================
+
+@media(min-width: 768px) {
+    .portfolio-icons{
+        
+        &__cover-xml{
+            padding: 7px;
+        }
+        &__cover{
+            width: 35px;
+            height: 35px;
+        }
+        &__cover-gulp{
+            padding: 3px 11px;
+        }
+        &__cover-html{
+            padding: 8px;
+        }
+        &__cover-css{
+            padding: 8px;
+        }
+        &__cover-js{
+            padding: 8px;
+        }
+        &__cover-php{
+            padding: 6px 3px;
+        }
+        &__cover-jequery{
+            padding: 6px 8px;
+        }
+        &__cover-sass{
+            padding: 7px 6px;
+        }
+        &__cover-react{
+            padding: 8px 6px;
+        }
+        &__cover-figma{
+            padding: 7px 10px;
+        }
+        &__cover-firebase{
+            padding: 6px 7px;
+        }
+        &__cover-redux-toolkit{
+            padding: 6px 7px;
+        }
+
+}    
+
+    
+}
+ //================ min-width: 992px  ======================
+ @media (min-width: 992px) {
+    .portfolio-icons{
+        padding: 8px 10px;
+
+        h3{
+            font-size: 18px;
+        }
+        &__cover{
+            width: 40px;
+            height: 40px;
+        }
+        &__cover-gulp{
+            padding: 4px 13px;
+        }
+        &__cover-html{
+            padding: 9px;
+        }
+        &__cover-css{
+            padding: 9px;
+        }
+        &__cover-js{
+            padding: 7px 8px;
+        }
+        &__cover-php{
+            padding: 10px 4px;
+        }
+        &__cover-jequery{
+            padding: 8px;
+        }
+        &__cover-sass{
+            padding: 9px 6px;
+        }
+        &__cover-react{
+            padding: 8px 6px;
+        }
+        &__cover-figma{
+            padding: 8px 11px;
+        }
+        &__cover-firebase{
+            padding: 6px 7px;
+        }
+        &__cover-redux-toolkit{
+            padding: 6px 7px;
+        }
+    }    
+}
+//================ \\ min-width: 992px  ======================
+
+//=================== min-width: 1200px =================
+@media(min-width: 1200px) {
+    .big-card__link{
+        .portfolio-icons{
+            padding: 20px;
+    
+            h3{
+                font-size: 25px;
+            }
+            &__cover{
+                width: 50px;
+                height: 50px;
+            }
+            &__cover-gulp{
+                padding: 10px 18px;
+            }
+            &__cover-html{
+                padding: 13px;
+            }
+            &__cover-css{
+                padding: 9px;
+            }
+            &__cover-js{
+                padding: 11px 12px;
+            }
+            &__cover-php{
+                padding: 16px 8px;
+            }
+            &__cover-jequery{
+                padding: 13px;
+            }
+            &__cover-sass{
+                padding: 13px 9px;
+            }
+            &__cover-react{
+                padding: 8px 6px;
+            }
+            &__cover-figma{
+                padding: 8px 11px;
+            }
+            &__cover-firebase{
+                padding: 6px 7px;
+            }
+            &__cover-redux-toolkit{
+                padding: 6px 7px;
+            }
+        
+        }
+    }
+    
+}
+//===================\\ min-width: 1200px =================
+
+
+
+//========================.big-card__link:hover,.small-card__link:hover =================
+.big-card__link:hover{
+    .portfolio-icons{
+    &__cover-gulp{
+        border: 1px solid #fc6969;
+        path{
+            fill: #fc6969;
+        }
+    }
+    &__cover-html{
+        border: 1px solid #6d9dff;
+        transition-delay: .1s;
+        path{
+            fill: #6d9dff;
+            transition-delay: .1s;
+        }
+    }
+    &__cover-js{
+        border: 1px solid #d8da66;
+        transition-delay: .2s;
+        path{
+            fill: #d8da66;
+            transition-delay: .2s;
+        }
+    }
+    &__cover-php{
+        border: 1px solid #c76dff;
+        transition-delay: .3s;
+        path{
+            fill: #c76dff;
+            transition-delay: .3s;
+        }
+    }
+    &__cover-sass{
+        border: 1px solid #ff856a;
+        transition-delay: .4s;
+        path{
+            fill: #ff856a;
+            transition-delay: .4s;
+        }
+    }
+    &__cover-jequery{
+        border: 1px solid #6ce4ff;
+        transition-delay: .5s;
+        path{
+            fill: #6ce4ff;
+            transition-delay: .5s;
+        }
+    }
+}
+}
+.small-card__link:hover{
+    &:nth-child(3){
+        .portfolio-icons{
+            &__cover-react{
+                border: 1px solid #68f5ff;
+                path{
+                    fill: #68f5ff;
+                }
+            }
+            &__cover-xml{
+                border: 1px solid #3076ff;
+                transition-delay: .1s;
+                path{
+                    fill: #3076ff;
+                    transition-delay: .1s;
+                }
+            }
+         
+            &__cover-js{
+                border: 1px solid #d8da66;
+                transition-delay: .3s;
+                path{
+                    fill: #d8da66;
+                    transition-delay: .3s;
+                }
+            }
+            &__cover-php{
+                border: 1px solid #c76dff;
+                transition-delay: .4s;
+                path{
+                    fill: #c76dff;
+                    transition-delay: .4s;
+                }
+            }
+            &__cover-sass{
+                border: 1px solid #ff856a;
+                transition-delay: .5s;
+                path{
+                    fill: #ff856a;
+                    transition-delay: .5s;
+                }
+            }
+            &__cover-figma{
+                border: 1px solid #fd6dff;
+                transition-delay: .6s;
+                path{
+                    fill: #fd6dff;
+                    transition-delay: .6s;
+                }
+            }
+        }
+    }
+    &:nth-child(4),&:nth-child(5),&:nth-child(6){
+        .portfolio-icons{
+            &__cover-react{
+                border: 1px solid #68f5ff;
+                path{
+                    fill: #68f5ff;
+                }
+            }
+            &__cover-xml{
+                border: 1px solid #3076ff;
+                transition-delay: .1s;
+                path{
+                    fill: #3076ff;
+                    transition-delay: .1s;
+                }
+            }
+            &__cover-js{
+                border: 1px solid #d8da66;
+                transition-delay: .2s;
+                path{
+                    fill: #d8da66;
+                    transition-delay: .2s;
+                }
+            }
+            &__cover-sass{
+                border: 1px solid #ff856a;
+                transition-delay: .3s;
+                path{
+                    fill: #ff856a;
+                    transition-delay: .3s;
+                }
+            }
+            &__cover-figma{
+                border: 1px solid #fd6dff;
+                transition-delay: .4s;
+                path{
+                    fill: #fd6dff;
+                    transition-delay: .4s;
+                }
+            }
+        }
+    }
+    &:nth-child(7){
+        .portfolio-icons{
+        &__cover-react{
+            border: 1px solid #68f5ff;
+            path{
+                fill: #68f5ff;
+            }
+        }
+        &__cover-xml{
+            border: 1px solid #3076ff;
+            transition-delay: .1s;
+            path{
+                fill: #3076ff;
+                transition-delay: .1s;
+            }
+        }
+        &__cover-js{
+            border: 1px solid #d8da66;
+            transition-delay: .2s;
+            path{
+                fill: #d8da66;
+                transition-delay: .2s;
+            }
+        }
+        &__cover-sass{
+            border: 1px solid #ff856a;
+            transition-delay: .3s;
+            path{
+                fill: #ff856a;
+                transition-delay: .3s;
+            }
+        }
+        &__cover-firebase{
+            border: 1px solid #FF8F00;
+            transition-delay: .4s;
+            path:first-child{
+                fill: #FF8F00;
+                transition-delay: .4s;
+            }
+            path:nth-child(2){
+                fill: #FFA000;
+                transition-delay: .4s;
+            }
+            path:nth-child(3){
+                fill: #FF6F00;
+                transition-delay: .4s;
+            }
+            path:last-child{
+                fill: #FFC400;
+                transition-delay: .4s;
+            }
+        }
+        &__cover-redux-toolkit{
+            border: 1px solid #6affab;
+            transition-delay: .5s;
+            path{
+                fill: #6affab;
+                transition-delay: .5s;
+            }
+        }
+    }
+    }
+    &:nth-child(8){
+        .portfolio-icons{
+            &__cover-html{
+                border: 1px solid #6d9dff;
+                
+                path{
+                    fill: #6d9dff;
+                }
+            }
+            &__cover-css{
+                border: 1px solid #FF5C00;
+                transition-delay: .1s;
+                path{
+                    fill: #FF5C00;
+                    transition-delay: .1s;
+                }
+            }
+            &__cover-jequery{
+                border: 1px solid #6ce4ff;
+                transition-delay: .2s;
+                path{
+                    fill: #6ce4ff;
+                    transition-delay: .2s;
+                }
+            }
+            &__cover-figma{
+                border: 1px solid #fd6dff;
+                transition-delay: .3s;
+                path{
+                    fill: #fd6dff;
+                    transition-delay: .3s;
+                }
+            }
+        }
+    }       
+
+}
+//========================///.big-card__link:hover,.small-card__link:hover =================
+
+@media(max-width: 1200px){
+    .big-card__link{
+        .portfolio-icons{
+        &__cover-gulp{
+            border: 1px solid #fc6969;
+            path{
+                fill: #fc6969;
+            }
+        }
+        &__cover-html{
+            border: 1px solid #6d9dff;
+            transition-delay: .1s;
+            path{
+                fill: #6d9dff;
+                transition-delay: .1s;
+            }
+        }
+        &__cover-js{
+            border: 1px solid #d8da66;
+            transition-delay: .2s;
+            path{
+                fill: #d8da66;
+                transition-delay: .2s;
+            }
+        }
+        &__cover-php{
+            border: 1px solid #c76dff;
+            transition-delay: .3s;
+            path{
+                fill: #c76dff;
+                transition-delay: .3s;
+            }
+        }
+        &__cover-sass{
+            border: 1px solid #ff856a;
+            transition-delay: .4s;
+            path{
+                fill: #ff856a;
+                transition-delay: .4s;
+            }
+        }
+        &__cover-jequery{
+            border: 1px solid #6ce4ff;
+            transition-delay: .5s;
+            path{
+                fill: #6ce4ff;
+                transition-delay: .5s;
+            }
+        }
+    }
+    }
+    .small-card__link{
+        &:nth-child(3){
+            .portfolio-icons{
+                &__cover-react{
+                    border: 1px solid #68f5ff;
+                    path{
+                        fill: #68f5ff;
+                    }
+                }
+                &__cover-xml{
+                    border: 1px solid #3076ff;
+                    transition-delay: .1s;
+                    path{
+                        fill: #3076ff;
+                        transition-delay: .1s;
+                    }
+                }
+             
+                &__cover-js{
+                    border: 1px solid #d8da66;
+                    transition-delay: .3s;
+                    path{
+                        fill: #d8da66;
+                        transition-delay: .3s;
+                    }
+                }
+                &__cover-php{
+                    border: 1px solid #c76dff;
+                    transition-delay: .4s;
+                    path{
+                        fill: #c76dff;
+                        transition-delay: .4s;
+                    }
+                }
+                &__cover-sass{
+                    border: 1px solid #ff856a;
+                    transition-delay: .5s;
+                    path{
+                        fill: #ff856a;
+                        transition-delay: .5s;
+                    }
+                }
+                &__cover-figma{
+                    border: 1px solid #fd6dff;
+                    transition-delay: .6s;
+                    path{
+                        fill: #fd6dff;
+                        transition-delay: .6s;
+                    }
+                }
+            }
+        }
+        &:nth-child(4),&:nth-child(5),&:nth-child(6){
+            .portfolio-icons{
+                &__cover-react{
+                    border: 1px solid #68f5ff;
+                    path{
+                        fill: #68f5ff;
+                    }
+                }
+                &__cover-xml{
+                    border: 1px solid #3076ff;
+                    transition-delay: .1s;
+                    path{
+                        fill: #3076ff;
+                        transition-delay: .1s;
+                    }
+                }
+                &__cover-js{
+                    border: 1px solid #d8da66;
+                    transition-delay: .2s;
+                    path{
+                        fill: #d8da66;
+                        transition-delay: .2s;
+                    }
+                }
+                &__cover-sass{
+                    border: 1px solid #ff856a;
+                    transition-delay: .3s;
+                    path{
+                        fill: #ff856a;
+                        transition-delay: .3s;
+                    }
+                }
+                &__cover-figma{
+                    border: 1px solid #fd6dff;
+                    transition-delay: .4s;
+                    path{
+                        fill: #fd6dff;
+                        transition-delay: .4s;
+                    }
+                }
+            }
+        }
+        &:nth-child(7){
+            .portfolio-icons{
+            &__cover-react{
+                border: 1px solid #68f5ff;
+                path{
+                    fill: #68f5ff;
+                }
+            }
+            &__cover-xml{
+                border: 1px solid #3076ff;
+                transition-delay: .1s;
+                path{
+                    fill: #3076ff;
+                    transition-delay: .1s;
+                }
+            }
+            &__cover-js{
+                border: 1px solid #d8da66;
+                transition-delay: .2s;
+                path{
+                    fill: #d8da66;
+                    transition-delay: .2s;
+                }
+            }
+            &__cover-sass{
+                border: 1px solid #ff856a;
+                transition-delay: .3s;
+                path{
+                    fill: #ff856a;
+                    transition-delay: .3s;
+                }
+            }
+            &__cover-firebase{
+                border: 1px solid #FF8F00;
+                transition-delay: .4s;
+                path:first-child{
+                    fill: #FF8F00;
+                    transition-delay: .4s;
+                }
+                path:nth-child(2){
+                    fill: #FFA000;
+                    transition-delay: .4s;
+                }
+                path:nth-child(3){
+                    fill: #FF6F00;
+                    transition-delay: .4s;
+                }
+                path:last-child{
+                    fill: #FFC400;
+                    transition-delay: .4s;
+                }
+            }
+            &__cover-redux-toolkit{
+                border: 1px solid #6affab;
+                transition-delay: .5s;
+                path{
+                    fill: #6affab;
+                    transition-delay: .5s;
+                }
+            }
+        }
+        }
+        &:nth-child(8){
+            .portfolio-icons{
+                &__cover-html{
+                    border: 1px solid #6d9dff;
+                    
+                    path{
+                        fill: #6d9dff;
+                    }
+                }
+                &__cover-css{
+                    border: 1px solid #FF5C00;
+                    transition-delay: .1s;
+                    path{
+                        fill: #FF5C00;
+                        transition-delay: .1s;
+                    }
+                }
+                &__cover-jequery{
+                    border: 1px solid #6ce4ff;
+                    transition-delay: .2s;
+                    path{
+                        fill: #6ce4ff;
+                        transition-delay: .2s;
+                    }
+                }
+                &__cover-figma{
+                    border: 1px solid #fd6dff;
+                    transition-delay: .3s;
+                    path{
+                        fill: #fd6dff;
+                        transition-delay: .3s;
+                    }
+                }
+            }
+        }       
+    
+    }
+    .big-card__title,.small-card__title {
+        h4 {
+            color:#00f2ff;
+            &::after {
+                content: "";
+                width: 100%;
+            }
+        }
+        
+    }
+}
