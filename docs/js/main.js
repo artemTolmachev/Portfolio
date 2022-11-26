@@ -27,25 +27,25 @@ $(document).ready(function(){
         
 
     //  форма
-    const formItems = document.querySelectorAll('.form-field');
+    // const formItems = document.querySelectorAll('.form-field');
      
-    for(let item of formItems){
-        const thisParent = item.closest('.form-item');
-        const thisPlaceholder = thisParent.querySelector('.fake-placeholder');
-    // если инпут в фокусе
-    item.addEventListener('focus',function(){
-        thisPlaceholder.classList.add('active');
-    });
-    // если инпут не в фокусе
-    item.addEventListener('blur', function(){
-        if(item.value.length > 0) {
-            thisPlaceholder.classList.add('active');
-        }
-        else{
-            thisPlaceholder.classList.remove('active');
-        }
-    })
-    }
+    // for(let item of formItems){
+    //     const thisParent = item.closest('.form-item');
+    //     const thisPlaceholder = thisParent.querySelector('.fake-placeholder');
+    // // если инпут в фокусе
+    // item.addEventListener('focus',function(){
+    //     thisPlaceholder.classList.add('active');
+    // });
+    // // если инпут не в фокусе
+    // item.addEventListener('blur', function(){
+    //     if(item.value.length > 0) {
+    //         thisPlaceholder.classList.add('active');
+    //     }
+    //     else{
+    //         thisPlaceholder.classList.remove('active');
+    //     }
+    // })
+    // }
 //form validate
     $('.contact-form').validate({
         rules: {
@@ -77,21 +77,21 @@ $(document).ready(function(){
         }
     })
 // функция AJAX запроса на сервер 
-function ajaxFormSubmit() {
-    let string = $(".contact-form").serialize(); //сохраняем данные введенные в форму в строку
-// формируем ajax запрос
-$.ajax({
-    type: "POST", //тип запросса - POST
-    url: "php/mail.php",//куда отправляем запрос
-    data: string, //какие данные щтправляем,в данном случае переменнная string
-    // функция если все прошло успешно
-    success: function (html) {
-        $(".contact-form").slideUp(800);
-        $('#answer').html(html);
-    }
-});
-return false;
-}
+// function ajaxFormSubmit() {
+//     let string = $(".contact-form").serialize();
+// // формируем ajax запрос
+// $.ajax({
+//     type: "POST", 
+//     url: "php/mail.php",
+//     data: string, 
+   
+//     success: function (html) {
+//         $(".contact-form").slideUp(800);
+//         $('#answer').html(html);
+//     }
+// });
+// return false;
+// }
 // отображение и скрытие карточек портфолио при ресайзе
 // $(window).on('resize',function(){
 //     if($(window).width() <1200){
