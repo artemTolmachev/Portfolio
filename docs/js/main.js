@@ -47,35 +47,35 @@ $(document).ready(function(){
     // })
     // }
 //form validate
-    $('.contact-form').validate({
-        rules: {
-            email: {
-                required: true,
-                email: true
-            },
-            subject: {
-                required: true
-            },
-            message: {
-                required: true
-            }
-        },
-        messages: {
-            email: {
-                required: 'Введите email',
-                email: 'отсутствует символ @'
-            },
-            subject: {
-                required: 'Введите тему сообщения'
-            },
-            message: {
-                required: 'Введите текст сообщения'
-            }
-        },
-        submitHandler: function (form) {
-            ajaxFormSubmit();
-        }
-    })
+    // $('.contact-form').validate({
+    //     rules: {
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         },
+    //         subject: {
+    //             required: true
+    //         },
+    //         message: {
+    //             required: true
+    //         }
+    //     },
+    //     messages: {
+    //         email: {
+    //             required: 'Введите email',
+    //             email: 'отсутствует символ @'
+    //         },
+    //         subject: {
+    //             required: 'Введите тему сообщения'
+    //         },
+    //         message: {
+    //             required: 'Введите текст сообщения'
+    //         }
+    //     },
+    //     submitHandler: function (form) {
+    //         ajaxFormSubmit();
+    //     }
+    // })
 // функция AJAX запроса на сервер 
 // function ajaxFormSubmit() {
 //     let string = $(".contact-form").serialize();
@@ -158,23 +158,23 @@ $(document).ready(function(){
     });
 
     //валидация поле телефона 
-    $(".phone").mask("+3(999)999-99-99");
-    //ф-ция для позиции курсора
-    $.fn.setCursorPosition = function (pos) {
-        if ($(this).get(0).setSelectionRange) {
-            $(this).get(0).setSelectionRange(pos, pos);
-        } else if ($(this).get(0).createTextRange) {
-            var range = $(this).get(0).createTextRange();
-            range.collapse(true);
-            range.moveEnd('character', pos);
-            range.moveStart('character', pos);
-            range.select();
-        }
-    };
+    // $(".phone").mask("+3(999)999-99-99");
+   
+    // $.fn.setCursorPosition = function (pos) {               //ф-ция для позиции курсора
+    //     if ($(this).get(0).setSelectionRange) {
+    //         $(this).get(0).setSelectionRange(pos, pos);
+    //     } else if ($(this).get(0).createTextRange) {
+    //         var range = $(this).get(0).createTextRange();
+    //         range.collapse(true);
+    //         range.moveEnd('character', pos);
+    //         range.moveStart('character', pos);
+    //         range.select();
+    //     }
+    // };
     //ф-ция для позиции курсора для поля phone
-    $('.phone').click(function () {
-        $(this).setCursorPosition(1); // set position number
-    });
+    // $('.phone').click(function () {
+    //     $(this).setCursorPosition(1); // set position number
+    // });
     
     AOS.init({
         once: true
