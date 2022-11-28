@@ -27,55 +27,27 @@ $(document).ready(function(){
         
 
     //  форма
-    // const formItems = document.querySelectorAll('.form-field');
+    const formItems = document.querySelectorAll('.form-field');
      
-    // for(let item of formItems){
-    //     const thisParent = item.closest('.form-item');
-    //     const thisPlaceholder = thisParent.querySelector('.fake-placeholder');
-    // // если инпут в фокусе
-    // item.addEventListener('focus',function(){
-    //     thisPlaceholder.classList.add('active');
-    // });
-    // // если инпут не в фокусе
-    // item.addEventListener('blur', function(){
-    //     if(item.value.length > 0) {
-    //         thisPlaceholder.classList.add('active');
-    //     }
-    //     else{
-    //         thisPlaceholder.classList.remove('active');
-    //     }
-    // })
-    // }
+    for(let item of formItems){
+        const thisParent = item.closest('.form-item');
+        const thisPlaceholder = thisParent.querySelector('.fake-placeholder');
+    // если инпут в фокусе
+    item.addEventListener('focus',function(){
+        thisPlaceholder.classList.add('active');
+    });
+    // если инпут не в фокусе
+    item.addEventListener('blur', function(){
+        if(item.value.length > 0) {
+            thisPlaceholder.classList.add('active');
+        }
+        else{
+            thisPlaceholder.classList.remove('active');
+        }
+    })
+    }
 //form validate
-    // $('.contact-form').validate({
-    //     rules: {
-    //         email: {
-    //             required: true,
-    //             email: true
-    //         },
-    //         subject: {
-    //             required: true
-    //         },
-    //         message: {
-    //             required: true
-    //         }
-    //     },
-    //     messages: {
-    //         email: {
-    //             required: 'Введите email',
-    //             email: 'отсутствует символ @'
-    //         },
-    //         subject: {
-    //             required: 'Введите тему сообщения'
-    //         },
-    //         message: {
-    //             required: 'Введите текст сообщения'
-    //         }
-    //     },
-    //     submitHandler: function (form) {
-    //         ajaxFormSubmit();
-    //     }
-    // })
+  
 // функция AJAX запроса на сервер 
 // function ajaxFormSubmit() {
 //     let string = $(".contact-form").serialize();
@@ -93,17 +65,17 @@ $(document).ready(function(){
 // return false;
 // }
 // отображение и скрытие карточек портфолио при ресайзе
-// $(window).on('resize',function(){
-//     if($(window).width() <1200){
-//         $('.small-card__link.card-hide').hide();
-//         $('.all-projects').fadeIn();
-//     }
-//     else{
+$(window).on('resize',function(){
+    if($(window).width() <1200){
+        $('.small-card__link.card-hide').hide();
+        $('.all-projects').fadeIn();
+    }
+    else{
         
-//         $('.all-projects').hide();
-//         $('.small-card__link.card-hide').fadeIn();
-//     }
-// });
+        $('.all-projects').hide();
+        $('.small-card__link.card-hide').fadeIn();
+    }
+});
 
 //  скрытие карточек при < 1200
     // if($(window).width() < 1200){
@@ -157,24 +129,26 @@ $(document).ready(function(){
         scrollChange: function ($currentListItem) {}
     });
 
-    //валидация поле телефона 
-    // $(".phone").mask("+3(999)999-99-99");
-   
-    // $.fn.setCursorPosition = function (pos) {               //ф-ция для позиции курсора
-    //     if ($(this).get(0).setSelectionRange) {
-    //         $(this).get(0).setSelectionRange(pos, pos);
-    //     } else if ($(this).get(0).createTextRange) {
-    //         var range = $(this).get(0).createTextRange();
-    //         range.collapse(true);
-    //         range.moveEnd('character', pos);
-    //         range.moveStart('character', pos);
-    //         range.select();
-    //     }
-    // };
+   //валидация поле телефона 
+   //ф-ция для позиции курсора
     //ф-ция для позиции курсора для поля phone
-    // $('.phone').click(function () {
-    //     $(this).setCursorPosition(1); // set position number
-    // });
+//    $(".phone").mask("+3(999)999-99-99");
+   
+//    $.fn.setCursorPosition = function (pos) {
+//        if ($(this).get(0).setSelectionRange) {
+//            $(this).get(0).setSelectionRange(pos, pos);
+//        } else if ($(this).get(0).createTextRange) {
+//            var range = $(this).get(0).createTextRange();
+//            range.collapse(true);
+//            range.moveEnd('character', pos);
+//            range.moveStart('character', pos);
+//            range.select();
+//        }
+//    };
+  
+//    $('.phone').click(function () {
+//        $(this).setCursorPosition(1); 
+//    });
     
     AOS.init({
         once: true
