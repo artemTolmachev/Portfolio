@@ -47,7 +47,35 @@ $(document).ready(function(){
     })
     }
 //form validate
-  
+$('.contact-form').validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+        name: {
+            required: true
+        },
+        message: {
+            required: true
+        }
+    },
+    messages: {
+        email: {
+            required: 'Введите E-Mail',
+            email: 'E-Mail ввден не корректно'
+        },
+        name: {
+            required: 'Введите свое имя'
+        },
+        message: {
+            required: 'Введите текст сообщения'
+        }
+    },
+    // submitHandler: function (form) {
+    //     ajaxFormSubmit();
+    // }
+})
 // функция AJAX запроса на сервер 
 // function ajaxFormSubmit() {
 //     let string = $(".contact-form").serialize();
