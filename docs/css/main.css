@@ -2196,17 +2196,10 @@ h3.title-h3 {
   top: 6px;
 }
 .form-item:nth-child(3) .form-field {
-  height: 88px;
-  padding-bottom: 27px;
-}
-.form-item:nth-child(3) .active {
-  top: 6px;
-}
-.form-item:nth-child(4) .form-field {
   padding-top: 26px;
   height: 160px;
 }
-.form-item:nth-child(4) .active {
+.form-item:nth-child(3) .active {
   top: 6px;
 }
 .form-item input {
@@ -2232,13 +2225,10 @@ h3.title-h3 {
     top: 8px;
   }
   .form-item:nth-child(3) .form-field {
-    height: 86px;
-  }
-  .form-item:nth-child(4) .form-field {
     height: 108px;
     padding-top: 33px;
   }
-  .form-item:nth-child(4) .active {
+  .form-item:nth-child(3) .active {
     top: 12px;
   }
   .form-item .btn {
@@ -2287,23 +2277,13 @@ h3.title-h3 {
     top: 6px;
   }
   .form-item:nth-child(3) .form-field {
-    height: 100px;
-    padding-bottom: 35px;
-  }
-  .form-item:nth-child(3) .fake-placeholder {
-    top: 30px;
-  }
-  .form-item:nth-child(3) .active {
-    top: 10px;
-  }
-  .form-item:nth-child(4) .form-field {
     padding-top: 26px;
     height: 173px;
   }
-  .form-item:nth-child(4) .fake-placeholder {
+  .form-item:nth-child(3) .fake-placeholder {
     top: 57px;
   }
-  .form-item:nth-child(4) .active {
+  .form-item:nth-child(3) .active {
     top: 6px;
   }
 }
