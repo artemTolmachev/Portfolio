@@ -28,7 +28,7 @@ $(document).ready(function(){
 
     //  форма
     const formItems = document.querySelectorAll('.form-field');
-     
+
     for(let item of formItems){
         const thisParent = item.closest('.form-item');
         const thisPlaceholder = thisParent.querySelector('.fake-placeholder');
@@ -72,10 +72,18 @@ $('.contact-form').validate({
             required: 'Введите текст сообщения'
         }
     },
+   
     // submitHandler: function (form) {
     //     ajaxFormSubmit();
     // }
+    
 })
+
+document.getElementById('myform').reset()
+
+
+
+
 // функция AJAX запроса на сервер 
 // function ajaxFormSubmit() {
 //     let string = $(".contact-form").serialize();
