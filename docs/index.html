@@ -739,9 +739,10 @@
                 </div>
                 <div class="contacts__right-col">
                     <!-- php/mail.php -->
-                    <form class="contact-form" 
+                    <form class="contact-form" id="myform"
                     action="https://formspree.io/f/meqdwroy"
-                    method="POST">
+                    method="POST"
+                    >
                     <div class="form-item">
                         <span class="fake-placeholder">Name</span>
                         <input class="form-field" type="text" name="name">
@@ -750,10 +751,6 @@
                             <span class="fake-placeholder">Email</span>
                             <input class="form-field" type="email" name="email">
                         </div>
-                        <!-- <div class="form-item">
-                            <span class="fake-placeholder">Lette subject</span>
-                            <input class="form-field" type="text" name="text">
-                        </div> -->
                         <div class="form-item">
                             <span class="fake-placeholder">Message</span>
                             <textarea class="form-field" name="message"></textarea>
