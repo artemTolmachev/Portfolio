@@ -80,8 +80,9 @@ $('.contact-form').validate({
 })
 
 document.getElementById('myform').reset()
-
-
+for (let i = 0; i < formItems.length; i++) {
+    formItems[i].value = ''
+}
 
 
 // функция AJAX запроса на сервер 
