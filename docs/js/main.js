@@ -82,6 +82,7 @@ $('.contact-form').validate({
 document.getElementById('myform').reset()
 for (let i = 0; i < formItems.length; i++) {
     formItems[i].value = ''
+    console.log(formItems[i].value)
 }
 
 
@@ -102,17 +103,17 @@ for (let i = 0; i < formItems.length; i++) {
 // return false;
 // }
 // отображение и скрытие карточек портфолио при ресайзе
-$(window).on('resize',function(){
-    if($(window).width() <1200){
-        $('.small-card__link.card-hide').hide();
-        $('.all-projects').fadeIn();
-    }
-    else{
+// $(window).on('resize',function(){
+//     if($(window).width() <1200){
+//         $('.small-card__link.card-hide').hide();
+//         $('.all-projects').fadeIn();
+//     }
+//     else{
         
-        $('.all-projects').hide();
-        $('.small-card__link.card-hide').fadeIn();
-    }
-});
+//         $('.all-projects').hide();
+//         $('.small-card__link.card-hide').fadeIn();
+//     }
+// });
 
 //  скрытие карточек при < 1200
     // if($(window).width() < 1200){
